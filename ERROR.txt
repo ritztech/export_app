@@ -1,0 +1,6 @@
+a13gatepassdeposit_edit.php?a13refid=8   // error when add item 
+
+
+http://localhost/sunrise/report/r16link.php?dstart=1%2F7%2F2015&dend=30%2F7%2F2016&suppliername=17&submit=SHOW+RECORDS
+
+Notice: Undefined variable: close_balance in C:\xampp\htdocs\sunrise\report\r16link.php on line 635

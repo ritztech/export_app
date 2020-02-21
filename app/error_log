@@ -1,0 +1,12 @@
+[29-Aug-2019 17:29:59 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[29-Aug-2019 17:29:59 UTC] PHP Notice:  Undefined index: securitylevel in /home/manishjain81/public_html/app/ritz/app/broker_edit.php on line 412
+[29-Aug-2019 17:29:59 UTC] PHP Notice:  Undefined index: securitylevel in /home/manishjain81/public_html/app/ritz/app/broker_edit.php on line 412
+[29-Aug-2019 17:31:02 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[29-Aug-2019 17:31:02 UTC] PHP Notice:  Undefined index: securitylevel in /home/manishjain81/public_html/app/ritz/app/broker_edit.php on line 412
+[29-Aug-2019 17:31:02 UTC] PHP Notice:  Undefined index: securitylevel in /home/manishjain81/public_html/app/ritz/app/broker_edit.php on line 412
+[29-Aug-2019 17:31:21 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[29-Aug-2019 17:31:21 UTC] PHP Notice:  Undefined index: securitylevel in /home/manishjain81/public_html/app/ritz/app/broker_edit.php on line 412
+[29-Aug-2019 17:31:21 UTC] PHP Notice:  Undefined index: securitylevel in /home/manishjain81/public_html/app/ritz/app/broker_edit.php on line 412
+[11-Nov-2019 09:04:27 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/mrpagro.com/app/include/sidemenu.php on line 334
+[14-Nov-2019 06:22:34 UTC] PHP Notice:  Undefined index: securitylevel in /home/manishjain81/public_html/mrpagro.com/app/app/user_reg_edit.php on line 5
+[14-Nov-2019 06:22:34 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/mrpagro.com/app/include/sidemenu.php on line 334

@@ -1,0 +1,1 @@
+<?phpinclude("../conf.php");session_start();$id=$_GET["q"];//echo $custname;$result12 = mysql_query("SELECT count(*) FROM `commercial_in_main` WHERE concat(`com_inv_2`,'',`comm_inv_3`,'',`invoice_no`) =  '$id' ");$row12 = mysql_fetch_array($result12);$v1= $row12['0'];echo $v1;?> 

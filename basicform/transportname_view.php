@@ -1,0 +1,231 @@
+
+<?php include('../conf.php'); ?>
+<?php
+session_start();
+if(!isset($_SESSION['uname'])) {echo "<script type='text/javascript'>window.location.href = '../index.php';</script>"; }
+
+$fid=$_SESSION['fid'];
+?>
+
+ <!DOCTYPE html>
+<?php 
+include('asw/db_con.php');
+//include('../include/header.php');
+include('../include/sidemenu.php');
+ 
+?>
+ <link href="asw/css/bootstrap.min.css" rel="stylesheet">
+ 
+ <script language="javascript">
+
+function getXMLHTTP() { //fuction to return the xml http object
+		var xmlhttp=false;	
+		try{
+			xmlhttp=new XMLHttpRequest();
+		}
+		catch(e)	{		
+			try{			
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			catch(e){
+				try{
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+				}
+				catch(e1){
+					xmlhttp=false;
+				}
+			}
+		} 	
+		return xmlhttp;
+    }
+	
+
+function deleterecord(deleteId) {
+	
+    if (confirm("Are you sure you want to delete this record  ?!") == true) {
+	     	var strURL="transportname_delete.php?id="+deleteId;
+	var req = getXMLHTTP();
+	if (req) {
+				req.open("GET", strURL, true);
+		req.send(null);
+	}
+		
+	alert('Record deleted.');
+	window.location='transportname_view.php';
+	
+	
+	} else {
+        x = "You pressed Cancel!";
+    }
+
+}
+
+
+</script>
+
+          
+      <h3 align="center" style="background-color:#004D71; margin-top:0px;"><span style="color:#FFFFFF;">LEDGER MASTER DETAILS</span></h3>   
+
+        <div id="page-wrapper" align = "center">
+            
+            <!-- /.row -->
+	
+   <div class="row-blue" align = "center">
+                        
+   <div class="row" align = "center" >
+
+   
+
+ 
+  
+ 
+
+<div class="col-lg-8"  style="width:100%">
+
+
+
+
+						   	       <div class="panel-body" align = "center">
+
+
+                    </a>
+					</br></br>
+					
+                            <div class="table-responsive" align = "center"  >
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+									<tr> <td colspan = 8 , align = "center">  	<a href="#"  ONCLICK="window.location.href='supplier_front_new.php'" > <input type="button" value="Add NEW" />   </td>  </tr>
+                                        <tr  style="background-color:#22B5C1; color:#FFFFFF;">
+										      <th>SNO</th>
+                                      
+                                            <th>Ledger  Name</th>
+											<th>TRADE ACCOUNT</th>
+											<th>BROKER</th>
+											<th>TRANSPORTER</th>
+											<th>City Name</th>
+											<th>City addr</th> 
+											 
+                                             <th>Contact</th> 											
+										
+											
+                                        </tr>
+                                    </thead>
+                                    <tbody >
+									<?php	
+									$sno=1;
+									
+									
+									
+		$emp=("select `legid` , `leg_name` , `fac_addr`,`fact_city`,`f_contact`,`broker`, `transported`, `party`  from ledger_master
+where  fid = $fid") or die(mysql_error());
+		$fetch_res = $mysqli->query($emp);
+		
+		while($show = $fetch_res->fetch_array(MYSQLI_ASSOC))
+		
+		{
+			$T_ACC = $show['party'];
+			if($T_ACC == "1")
+			{
+				$T_ACC = "TRADING_ACCOUNT";
+				
+			}
+						$b_ACC = $show['broker'];
+			if($b_ACC == "1")
+			{
+				$b_ACC = "BROKER";
+				
+			}
+						$Tra_ACC = $show['transported'];
+			if($Tra_ACC == "1")
+			{
+				$Tra_ACC = "TRANSPORTER";
+				
+			}
+			
+		
+	?>
+<tr class="odd gradeX">
+
+<td style="width:150px;"> <?php  echo $sno  ?></td>
+
+
+<td style="width:201px;padding-left:10px;">
+<a href="../basicform/supplier_edit.php?legid= <?php echo  $show['legid']?> "> <?php echo  $show['leg_name']?>  </a>
+</td>
+
+
+<td style="width:150px;"> <?php echo $T_ACC; ?></td>
+<td style="width:150px;"> <?php echo $b_ACC; ?></td>
+<td style="width:150px;"> <?php echo $Tra_ACC; ?></td>
+
+
+<td style="width:150px;"> <?php  echo $show['fact_city'];  ?></td>
+<td style="width:150px;"> <?php  echo $show['fac_addr'];  ?></td>
+<td style="width:150px;"> <?php  echo $show['f_contact'];  ?></td>
+
+
+                                        </tr>
+                                     <?php $sno= $sno +1;} ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+					  </div>
+                    </div>
+      </div>
+     </div>
+         
+	
+    <!-- Core Scripts - Include with every page -->
+    <script src="asw/js/jquery-1.10.2.js"></script>
+    <script src="asw/js/bootstrap.min.js"></script>
+    <script src="asw/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+    <!-- Page-Level Plugin Scripts - Tables -->
+    <script src="asw/js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="asw/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+
+    <!-- SB Admin Scripts - Include with every page -->
+    <script src="asw/js/sb-admin.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').dataTable();
+    });
+    </script><!-- /.modal --><!-- /.modal -->
+    <!-- /.modal -->
+</tr>
+</table>
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+</form>
+
+
+
+</div>
+</div>
+</div>
+
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html> 

@@ -1,0 +1,107 @@
+[04-Jan-2019 15:36:18 UTC] PHP Notice:  Undefined index: fid in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 7
+[04-Jan-2019 15:36:18 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 11
+[04-Jan-2019 15:36:18 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[04-Jan-2019 15:36:18 UTC] PHP Notice:  Undefined variable: firmname in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 122
+[04-Jan-2019 15:36:18 UTC] PHP Notice:  Undefined variable: mpvat in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 125
+[04-Jan-2019 15:36:18 UTC] PHP Notice:  Undefined variable: businessfirm in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 131
+[04-Jan-2019 15:36:18 UTC] PHP Notice:  Undefined variable: mandilicenseno in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 134
+[04-Jan-2019 15:36:18 UTC] PHP Notice:  Undefined variable: officeadd in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 140
+[04-Jan-2019 15:36:18 UTC] PHP Notice:  Undefined variable: itnumber in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 143
+[04-Jan-2019 15:36:18 UTC] PHP Notice:  Undefined variable: shopadd in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 149
+[04-Jan-2019 15:36:18 UTC] PHP Notice:  Undefined variable: contactperson in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 152
+[04-Jan-2019 15:36:18 UTC] PHP Notice:  Undefined variable: phonno in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 158
+[04-Jan-2019 15:36:18 UTC] PHP Notice:  Undefined variable: mobile in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 161
+[04-Jan-2019 15:36:18 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 193
+[04-Jan-2019 15:36:18 UTC] PHP Notice:  Undefined variable: i in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 242
+[04-Jan-2019 15:38:05 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 494
+[04-Jan-2019 15:38:05 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 516
+[04-Jan-2019 15:38:20 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 494
+[04-Jan-2019 15:38:20 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 516
+[04-Jan-2019 16:35:25 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/broker_rep.php on line 415
+[04-Jan-2019 16:35:25 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/broker_rep.php on line 549
+[04-Jan-2019 16:35:33 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/broker_rep.php on line 415
+[04-Jan-2019 16:35:33 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/broker_rep.php on line 549
+[05-Jan-2019 15:13:29 UTC] PHP Notice:  Undefined variable: i in /home/manishjain81/public_html/app/ritz/report/r14fundreciept.php on line 240
+[05-Jan-2019 15:13:29 UTC] PHP Notice:  Undefined variable: i in /home/manishjain81/public_html/app/ritz/report/r14fundreciept.php on line 240
+[06-Jan-2019 05:01:18 UTC] PHP Notice:  Undefined variable: i in /home/manishjain81/public_html/app/ritz/report/r14fundreciept.php on line 240
+[06-Jan-2019 05:01:20 UTC] PHP Notice:  Undefined variable: i in /home/manishjain81/public_html/app/ritz/report/r14fundreciept.php on line 240
+[06-Jan-2019 06:14:48 UTC] PHP Notice:  Undefined index: fid in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 7
+[06-Jan-2019 06:14:48 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 11
+[06-Jan-2019 06:14:48 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[06-Jan-2019 06:14:48 UTC] PHP Notice:  Undefined variable: firmname in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 122
+[06-Jan-2019 06:14:48 UTC] PHP Notice:  Undefined variable: mpvat in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 125
+[06-Jan-2019 06:14:48 UTC] PHP Notice:  Undefined variable: businessfirm in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 131
+[06-Jan-2019 06:14:48 UTC] PHP Notice:  Undefined variable: mandilicenseno in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 134
+[06-Jan-2019 06:14:48 UTC] PHP Notice:  Undefined variable: officeadd in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 140
+[06-Jan-2019 06:14:48 UTC] PHP Notice:  Undefined variable: itnumber in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 143
+[06-Jan-2019 06:14:48 UTC] PHP Notice:  Undefined variable: shopadd in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 149
+[06-Jan-2019 06:14:48 UTC] PHP Notice:  Undefined variable: contactperson in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 152
+[06-Jan-2019 06:14:48 UTC] PHP Notice:  Undefined variable: phonno in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 158
+[06-Jan-2019 06:14:48 UTC] PHP Notice:  Undefined variable: mobile in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 161
+[06-Jan-2019 06:14:48 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 193
+[06-Jan-2019 06:14:48 UTC] PHP Notice:  Undefined variable: i in /home/manishjain81/public_html/app/ritz/report/r15fundpayment.php on line 242
+[17-Jan-2019 07:19:28 UTC] PHP Notice:  Undefined index: fid in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 7
+[17-Jan-2019 07:19:28 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 12
+[17-Jan-2019 07:19:28 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[17-Jan-2019 07:19:28 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 178
+[18-Jan-2019 07:06:14 UTC] PHP Notice:  Undefined index: fid in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 7
+[18-Jan-2019 07:06:14 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 12
+[18-Jan-2019 07:06:14 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[18-Jan-2019 07:06:14 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 178
+[18-Jan-2019 15:12:19 UTC] PHP Notice:  Undefined index: fid in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 7
+[18-Jan-2019 15:12:19 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 12
+[18-Jan-2019 15:12:19 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[18-Jan-2019 15:12:19 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 178
+[18-Jan-2019 15:37:03 UTC] PHP Notice:  Undefined index: fid in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 7
+[18-Jan-2019 15:37:03 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 12
+[18-Jan-2019 15:37:03 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[18-Jan-2019 15:37:03 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 178
+[19-Jan-2019 03:43:53 UTC] PHP Notice:  Undefined index: fid in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 7
+[19-Jan-2019 03:43:53 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 12
+[19-Jan-2019 03:43:53 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[19-Jan-2019 03:43:53 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 178
+[20-Jan-2019 12:36:39 UTC] PHP Notice:  Undefined index: fid in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 7
+[20-Jan-2019 12:36:39 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 12
+[20-Jan-2019 12:36:39 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[20-Jan-2019 12:36:39 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 178
+[21-Jan-2019 04:47:19 UTC] PHP Notice:  Undefined index: fid in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 7
+[21-Jan-2019 04:47:19 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 12
+[21-Jan-2019 04:47:19 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[21-Jan-2019 04:47:19 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 178
+[22-Jan-2019 02:40:56 UTC] PHP Notice:  Undefined index: fid in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 7
+[22-Jan-2019 02:40:56 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 12
+[22-Jan-2019 02:40:56 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[22-Jan-2019 02:40:56 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 178
+[23-Jan-2019 06:55:28 UTC] PHP Notice:  Undefined index: fid in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 7
+[23-Jan-2019 06:55:28 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 12
+[23-Jan-2019 06:55:28 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[23-Jan-2019 06:55:28 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 178
+[23-Jan-2019 09:00:06 UTC] PHP Notice:  Undefined index: fid in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 7
+[23-Jan-2019 09:00:06 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 12
+[23-Jan-2019 09:00:06 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[23-Jan-2019 09:00:06 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 178
+[25-Jan-2019 10:58:51 UTC] PHP Notice:  Undefined index: fid in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 7
+[25-Jan-2019 10:58:51 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 12
+[25-Jan-2019 10:58:51 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[25-Jan-2019 10:58:51 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 178
+[29-Jan-2019 08:35:49 UTC] PHP Notice:  Undefined index: fid in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 7
+[29-Jan-2019 08:35:49 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 12
+[29-Jan-2019 08:35:49 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[29-Jan-2019 08:35:49 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 178
+[29-Jan-2019 11:06:38 UTC] PHP Notice:  Undefined index: fid in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 7
+[29-Jan-2019 11:06:38 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 12
+[29-Jan-2019 11:06:38 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[29-Jan-2019 11:06:38 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 178
+[05-Feb-2019 05:16:21 UTC] PHP Notice:  Undefined index: fid in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 7
+[05-Feb-2019 05:16:21 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 12
+[05-Feb-2019 05:16:21 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[05-Feb-2019 05:16:21 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 178
+[06-May-2019 15:10:53 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/broker_rep.php on line 415
+[06-May-2019 15:10:53 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/broker_rep.php on line 549
+[09-Jun-2019 08:00:06 UTC] PHP Notice:  Undefined index: fid in /home/manishjain81/public_html/app/ritz/report/broker_rep.php on line 7
+[09-Jun-2019 08:00:06 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/broker_rep.php on line 12
+[09-Jun-2019 08:00:06 UTC] PHP Notice:  Undefined index: fname in /home/manishjain81/public_html/app/ritz/include/sidemenu.php on line 319
+[09-Jun-2019 08:00:06 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/broker_rep.php on line 178
+[24-Jul-2019 08:45:18 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 494
+[24-Jul-2019 08:45:19 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 516
+[24-Jul-2019 08:45:19 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manishjain81/public_html/app/ritz/report/r16link.php on line 657

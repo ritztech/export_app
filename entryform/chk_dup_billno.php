@@ -1,0 +1,1 @@
+<?phpinclude("../conf.php");session_start();$id=$_GET["q"];//echo $id;$fid=$_SESSION['fid'];$custname = strtoupper($id);//echo $custname;$result12 = mysql_query("SELECT count(1) FROM `mandia6` WHERE `billno` = '$custname'  and fid = $fid");$row12 = mysql_fetch_array($result12);$v1= $row12['0'];echo $v1;?> 
