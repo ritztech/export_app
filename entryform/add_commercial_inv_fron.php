@@ -128,7 +128,6 @@ input:focus {
 	  
 
 <script language="javascript" type="text/javascript" src="../datetimepicker.js"> </script>
-
 <script language="javascript" type="text/javascript" src="jscode/a4code.js">  </script>
  <script language="javascript" type="text/javascript" src="jscode/add_conditions_single.js">  </script>
 
@@ -1345,6 +1344,9 @@ document.form1.currency.value="<?php echo $currzid_id ?>";
  
 	$( "#comminvdate" ).datepicker();
 		$( "#ppbilldateee" ).datepicker();
+		$( "#saudadate" ).datepicker();
+		
+		
 	
 	
 		

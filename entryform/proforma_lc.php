@@ -170,21 +170,21 @@ var dt=document.form1.dateofissue
 
 </script>
 
-<script language="javascript" type="text/javascript" src="../datetimepicker.js"> </script>
-
 
 <link href="..//style.css" rel="stylesheet" type="text/css" />
     <link href="js/jquery-ui.css" rel="stylesheet">
       <script src="js/jquery-1.10.2.js"></script>
       <script src="js/jquery-ui.js"></script>
 	  
-	  
+
+<script language="javascript" type="text/javascript" src="../datetimepicker.js"> </script>
+
 
 
 		
 		</head>
 		
-<?php  include('../include/sidemenu.php');?>
+<?php // include('../include/sidemenu.php');?>
 
 <form id="form1" name="form1" method="post"  onsubmit = "return validform();" action="add_lc_bck.php">		
 		
@@ -211,10 +211,10 @@ var dt=document.form1.dateofissue
 
 <table  width="45%"  align="center"   style="font-weight:bold;font-size:15">
 
-<tr> <td>  LC Number  </td>  <td>   <input type="text"   size="50"  name="lcnumber"  /></td>  </tr>
-<tr> <td>  Issueing Branch & Address  </td>  <td>   <input type="text"   size="50"  name="issuebranch"  /></td>  </tr>
+<tr> <td>  LC Number  </td>  <td>   <input type="text"   autofocus required="required"   size="50"  name="lcnumber"  /></td>  </tr>
+<tr> <td>  Issueing Branch & Address  </td>  <td>   <input type="text" required="required"   size="50"  name="issuebranch"  /></td>  </tr>
 <tr> <td> Date of Issue </td>  <td>   <input type="text" size="50"  id="dateofissue" onchange = "isDate(this.value)"     name="dateofissue"  /></td>  </tr>
-<tr> <td>  LC DATE  </td>  <td>   <input type="text"  size="50"  onchange = "isDate(this.value)"  name="lcdates"  /></td>  </tr>
+<tr> <td>  LC DATE  </td>  <td>   <input type="text"  size="50"  id="lcdates"  onchange = "isDate(this.value)"  name="lcdates"  /></td>  </tr>
 <tr> <td>  Currency  </td>  <td>     <select name="currency" style="width:150px">
                                    <?php               
 				$query = mysql_query("SELECT `tab_auto_id`, `curr_name` FROM `currency_master`");
@@ -237,7 +237,7 @@ var dt=document.form1.dateofissue
 <tr> <td>  Form of LC  </td>  <td>   <input type="text" size="50"   name="formlccc"  /></td>  </tr>
 <tr> <td>  Tolerance </td>  <td>   <input type="text" size="50"   name="tolerence"  /></td>  </tr>
 
-<tr> <td>  Expiriry Date </td>  <td>   <input type="text" size="50" onchange = "isDate(this.value)"  name="expdates"  /></td>  </tr>
+<tr> <td>  Expiriry Date </td>  <td>   <input type="text" id="expdates"  size="50" onchange = "isDate(this.value)"  name="expdates"  /></td>  </tr>
 <tr> <td>  Expiriry Place </td>  <td>   <input type="text"  size="50"  name="expplacess"  /></td>  </tr>
 <tr> <td>  Advising bank  </td>  <td>   <input type="text"  size="50"  name="advbanksss"  /></td>  </tr>
 <tr> <td>  Beneficiary Details </td>  <td>   <input type="text" required="required"  size="50"  name="benefedetailsss"  /></td>  </tr>
@@ -268,10 +268,14 @@ var dt=document.form1.dateofissue
 </table>
 	
 	  <script>
-  $( function() {
-    $( "#dateofissue" ).datepicker();
-		
+  
+     $( function() {
+	$( "#dateofissue" ).datepicker();
+	$( "#lcdates" ).datepicker();
+	$( "#expdates" ).datepicker();
   } );
+  
+  
   </script>
 
   

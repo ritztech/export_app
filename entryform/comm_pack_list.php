@@ -261,11 +261,11 @@ Consignee:  </br> <b><?php echo $p_name ?></b><br>   <span  style="font-size:80%
 
 <td valign="top" width="70%" > <table width="100%"  border="1" >
 
-<tr> <td> Pre-Carriage By:</td>  <td align="left"> <?php  echo $row['pre_carr_by'] ?>  </td>    </tr>
-<tr> <td> Place of receipt by Pre-carrier: </td>  <td align="left">  <?php  echo $row['place_of_rec_per'] ?> </td>    </tr>
-<tr> <td></br> Vessel : </td>  <td align="left"> </br>  <?php  echo $row['vessel'] ?> </td>    </tr>
-<tr> <td></br> Port of Loading: : </td>  <td align="left"> </br>  <?php  echo $row['port_of_laod'] ?> </td>    </tr>
-<tr> <td></br> Port of Discharge: : </td>  <td align="left"> </br> <?php  echo $row['port_of_dis'] ?> </td>    </tr>
+<tr> <td> Pre-Carriage By:</td>  <td align="left">   <?php if($row['pre_carr_by']!="0") { echo $row['pre_carr_by']; } ?>  </td>    </tr>
+<tr> <td> Place of receipt by Pre-carrier: </td>  <td align="left">   <?php if($row['place_of_rec_per']!="0") { echo $row['place_of_rec_per']; } ?>  </td>    </tr>
+<tr> <td></br> Vessel : </td>  <td align="left"> </br>    <?php if($row['vessel']!="0") { echo $row['vessel']; } ?>  </td>    </tr>
+<tr> <td></br> Port of Loading: : </td>  <td align="left"> </br>  <?php if($row['port_of_laod']!="0") { echo $row['port_of_laod']; } ?> </td>    </tr>
+<tr> <td></br> Port of Discharge: : </td>  <td align="left"> </br>  <?php if($row['port_of_dis']!="0") { echo $row['port_of_dis']; } ?>  </td>    </tr>
 
 </table> 
 
@@ -277,7 +277,7 @@ Consignee:  </br> <b><?php echo $p_name ?></b><br>   <span  style="font-size:80%
 
  <td width="30%" valign="top"> 
 </br>Terms of Delivery: </br></br></br>
-<?php  echo $row['del_terms'] ?>
+ <?php if($row['del_terms']!="0") { echo $row['del_terms']; } ?> 
 
 
 
@@ -331,7 +331,7 @@ while($row13 = mysql_fetch_array($result13_2))
 
 	  <tr> <td colspan="2">
 <table width="100%">   
-<tr>  <td> <?php echo $i ?> /</br>  </td>  <td align="center">  <?php echo $bags ?>  PCS</br><font size="2">EXPORT</br>STANDAR</br>LOOSE </font>    </td>  <td width="60%"  align = "center"><b> <?php  echo $goods_descr  ?>  </b> </br><?php  echo $itemdetilas  ?>  </br>  <b> H.S. CODE NO:  <?php  echo $hsn_val_fr  ?> </b> </td>   </tr>
+<tr>  <td>  </td>  <td align="center">  <?php echo $bags ?>  PCS</br><font size="2">EXPORT</br>STANDAR</br>LOOSE </font>    </td>  <td width="60%"  align = "center"><b> <?php  echo $goods_descr  ?>  </b> </br><?php  echo $itemdetilas  ?>  </br>  <b> H.S. CODE NO:  <?php  echo $hsn_val_fr  ?> </b> </td>   </tr>
 
 </table> </td>   <td align = "center" valign="top" style="font-weight:bold;" > <?php  echo $qty  ?>  M.T  </td>  <td  colspan="3" align = "center" valign="top"  style="font-weight:bold;"  >    </td>    </tr>
 

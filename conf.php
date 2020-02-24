@@ -1,8 +1,12 @@
 <?php
 
 $mysql_hostname = "localhost";
-$mysql_user = "manishjain81";
-$mysql_password = "Monujain90786";
+
+$mysql_user = "root";
+$mysql_password = "sudhir";
+
+//$mysql_user = "manishjain81";
+//$mysql_password = "Monujain90786";
 $mysql_database = "exportdb";
 
 

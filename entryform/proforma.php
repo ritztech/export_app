@@ -180,17 +180,17 @@ window.history.back();
 				<td style="border:1px solid #000;text-align:left;" colspan="2" width="25%"><b>Country of<br>Final Destination :</b> <br><?php  echo $row['cntry_final'] ?></td>
 			</tr> 
 			<tr>
-				<td style="border:1px solid #000;text-align:left;" colspan="2"><b>Pre-Carriage by :</b> <br><?php  echo $row['pre_carr_by'] ?></td>
-				<td style="border:1px solid #000;text-align:left;"><b>Place of receipt<br>by pre-carrier:</b> <br><?php  echo $row['place_of_rec_per'] ?></td>
+				<td style="border:1px solid #000;text-align:left;" colspan="2"><b>Pre-Carriage by :</b> <br><?php if($row['pre_carr_by']!="0") { echo $row['pre_carr_by']; } ?></td>
+				<td style="border:1px solid #000;text-align:left;"><b>Place of receipt<br>by pre-carrier:</b> <br>  <?php if($row['place_of_rec_per']!="0") { echo $row['place_of_rec_per']; } ?> </td>
 				<td style="border:1px solid #000;text-align:left;" colspan="5" rowspan="3"><b>Delivery & Payment Terms:</b> <br><b>Term:</b> <?php  echo $row['del_terms'] ?> </td>
 			</tr>
 			<tr>
-				<td style="border:1px solid #000;text-align:left;" colspan="2"><b>Vessel/Flight No.</b> <br><?php  echo $row['vessel'] ?></td>
-				<td style="border:1px solid #000;text-align:left;"><b>Port of Loading</b> <br><?php  echo $row['port_of_laod'] ?></td>
+				<td style="border:1px solid #000;text-align:left;" colspan="2"><b>Vessel/Flight No.</b> <br> <?php if($row['vessel']!="0") { echo $row['vessel']; } ?> </td>
+				<td style="border:1px solid #000;text-align:left;"><b>Port of Loading</b> <br>  <?php if($row['port_of_laod']!="0") { echo $row['port_of_laod']; } ?> </td>
 			</tr>
 			<tr>
-				<td style="border:1px solid #000;" colspan="2"><b>Port of Discharge</b> <br><?php  echo $row['port_of_dis'] ?></td>
-				<td style="border:1px solid #000;"><b>Final Destination</b> <br><?php  echo $row['final_dest'] ?></td>
+				<td style="border:1px solid #000;" colspan="2"><b>Port of Discharge</b> <br>  <?php if($row['port_of_dis']!="0") { echo $row['port_of_dis']; } ?> </td>
+				<td style="border:1px solid #000;"><b>Final Destination</b> <br>  <?php if($row['final_dest']!="0") { echo $row['final_dest']; } ?> </td>
 			</tr>
 		
 		<tr style="font-weight:bold;text-align:center;">
