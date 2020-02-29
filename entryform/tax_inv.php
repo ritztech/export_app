@@ -442,7 +442,7 @@ catch(Exception $e)
   </td>
 <td colspan="3" align="center"></br> <IMG SRC="common_seal_sandar.jpeg"	width="120" height="100" >  </td>
 <td colspan="2" align="center" style="font-size:80%" > Certified that the particulars given above are true and correct 
-</br>  For <?php echo $_SESSION['myfirmnameeee'] ?></br> <IMG SRC="auth_sign_sandar.jpeg"	width="150" height="80" > </br>  </br>   </td>  </tr>
+</br>  For <?php echo $_SESSION['myfirmnameeee'] ?></br> <IMG SRC="sandar_new_sign.png"	width="150" height="80" > </br>  </br>   </td>  </tr>
 
 <tr> <td colspan="4" align="center">  </td> <td colspan="3" align="center"> Common Seal </td>  <td colspan="2" align="center"> Authorised signatory </td>   </tr>
 

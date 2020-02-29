@@ -234,9 +234,9 @@ while($row13 = mysql_fetch_array($result13_2))
 					<td colspan="2" style="border:1px solid #000;text-align:left;"> <?php echo $goods_descr ?> </br>   <?php echo $row13['item_details']  ?>  </td>
 					<td style="text-align:center;border:1px solid #000;vertical-align: middle;"><?php echo $hsn_val_fr ?></td>
 					<td style="text-align:center;border:1px solid #000;vertical-align: middle;"><?php echo $unit ?>  </td>
-					<td style="text-align:center;border:1px solid #000;vertical-align: middle;"><?php echo $qty ?> </br> (+/-10%)</td>
-					<td style="text-align:center;border:1px solid #000;vertical-align: middle;"><?php echo $rate ?></td>
-					<td style="text-align:right;border:1px solid #000;vertical-align: middle;"><?php  echo $curr_name; ?> - <?php echo $amount ?></td>
+					<td style="text-align:center;border:1px solid #000;vertical-align: middle;"><?php echo  number_format($qty,3) ?> </td>
+					<td style="text-align:center;border:1px solid #000;vertical-align: middle;"><?php echo  number_format($rate,2) ?> </td>
+					<td style="text-align:right;border:1px solid #000;vertical-align: middle;"><?php  echo $curr_name; ?>  <?php echo $amount ?></td>
 				</tr>
 				
   <?php }  ?>	
@@ -292,7 +292,7 @@ catch(Exception $e)
 			<tr>
 				<td colspan="3" rowspan="2" style="width:50%;border-top: none !important;border:1px solid #000;">  <br><b><u>Declaration:</u></b><br>We declare that this Proforma invoice shows<br>the actual price of the goods described and that all<br>particulars are true and correct.</td>
 				<td colspan="3" style="text-align:right;margin-right:10px !important;border-top: none !important;border:1px solid #000;vertical-align: middle;"><b>Total</b> </td>
-				<td colspan="2" style="text-align:right;margin-right:10px !important;border-top: none !important;border:1px solid #000;vertical-align: middle;"> <b> <?php  echo $curr_name; ?> - <?php echo $net_amt  ?>.00 </b> </td>
+				<td colspan="2" style="text-align:right;margin-right:10px !important;border-top: none !important;border:1px solid #000;vertical-align: middle;"> <b> <?php  echo $curr_name; ?>  <?php echo $net_amt  ?>.00 </b> </td>
 			</tr>
 			
 			<tr>
@@ -301,8 +301,8 @@ catch(Exception $e)
 			</tr>
 			
 			<tr>
-				<td colspan="3" style="border:1px solid #000;"><b>For, SANDAAR AGRO PRIVATE LIMITED</b><br><br><br><br><b>Authorized Signatory</b></td>
-				<td colspan="5" style="border:1px solid #000;"><b>For, <?php echo $p_name  ?></b><br><br><br><br><b>Authorized Signatory</b></td>
+				<td colspan="3" style="border:1px solid #000;"><b>For, SANDAAR AGRO PRIVATE LIMITED</b><br><IMG SRC="sandar_new_sign.png"	width="150" height="80" > </br> <b>Authorized Signatory</b></td>
+				<td colspan="5" style="border:1px solid #000;" valign = "top"><b>For, <?php echo $p_name  ?></b><br><br><br><br></br><b>Authorized Signatory</b></td>
 			</tr>
 
 

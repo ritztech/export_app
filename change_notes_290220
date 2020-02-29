@@ -1,0 +1,29 @@
+sandar_sign.jpeg
+
+Please Following Correction for Performa Report :
+
+01 Mention Please Fieo Mebership Lice. no. :    MPC/157/2019-2020  -- Done
+02 Change Web address : www.sandaar.com   -- Done
+03 Change email ID    : info@sandaar.com  -- Done
+04 Quanity se Tollerage Remove kar digiye . we have to in Terms mention  -- Done  , removed +-10%
+05 Rate  :   decimal after 2 number like  401             $ 401.00  -- Done
+06 Quanity mein Decimal after 3 Number If Shown MTS   like  500  to    500.000  -- Done
+
+07 Value mein USD-205000.00   is mein Desh Ko Delete kar digiye please
+Aisa lag raha hai Mines ka fighter hai
+
+USD ke saath yadh ho jaye to $  mention karwa digiye
+-- 
+
+
+
+*************************
+
+<IMG SRC="sandar_new_sign.png"	width="150" height="80" >
+
+
+********************************************
+
+DB -- updates --
+
+UPDATE `exportdb`.`firmcreation` SET `officeadd` = 'Reg.Office : 20053, Civil Line Infront Of Harijan Thana City : Tikamgarh, Pin code - 472001 State Madhya Pradesh / Country INDIA </br> Mobile +91 7000615952 9893142537 Tel.: +91 7683-240342 Fax : +91 7683 297329 Email : info@sandaar.com Web.: www.sandaar.com </br> <b>GSTN No. : 23ABCCS3959G1ZA IEC : ABCCS3959G Fedration of indian export Membership no. : MPC/157/2019-2020' WHERE `firmcreation`.`fid` = 16;
