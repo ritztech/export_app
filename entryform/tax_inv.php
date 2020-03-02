@@ -236,7 +236,7 @@ window.history.back();
 
 <table width="100%"  align="center"  id = "newtable"  border="2">
 
-<tr> <td valign="top" width="50%"  > Bill To  </td>  <td valign="top" width="50%"  >SHIP TO PARTY:  </td>   </tr>
+<tr> <td valign="top" width="50%"  > Bill To Party </td>  <td valign="top" width="50%"  >SHIP TO PARTY:  </td>   </tr>
 
 <tr> 
 
@@ -258,7 +258,7 @@ window.history.back();
 
 
  <td width="50%" valign="top" style="font-size:90%" s> 
-
+GOODS CONSIGNED TO 
 <?php 
 $result13_33 = mysql_query("SELECT `tab_auto_id`, `issue_branch`, DATE_FORMAT(date_of_issue,'%d/%m/%Y') as date_of_issue, DATE_FORMAT(lc_date,'%d/%m/%Y') as lc_date, `currency`, `amt_of_lc`, `form_of_lc`, `tolerance`, DATE_FORMAT(expdate,'%d/%m/%Y') as expdate, `exp_place`, `advise_bank`, `benefeitiary_details`, `othersss`, `proforma_id`, `lcnumber` FROM `proforma_lc_details` WHERE  proforma_id=$proforma_id"); 
 while($row17 = mysql_fetch_array($result13_33))
@@ -275,7 +275,7 @@ while($row17 = mysql_fetch_array($result13_33))
 <?php echo $off_addr1_ss  ?> </br>
 
 
-
+ 
 
  </td> 
 
@@ -415,6 +415,7 @@ catch(Exception $e)
 
 <tr> <td style="font-size:80%" > Add: IGST @ 0 % (Against LUT)  </td>  <td>   </td>   </tr>
 <tr> <td style="font-size:80%"   > Total Amount after Tax (INR) :  </td>  <td align="right" > <?php echo $final_amt ; ?> </td>   </tr>
+<tr> <td style="font-size:80%"   > GST on Reverse Charge :  </td>  <td align="right" > </td>   </tr>
 </table>
 
  </td>

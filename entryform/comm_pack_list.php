@@ -104,6 +104,10 @@ catch(PDOException $e) {
 .style4 {font-size: 14px}
 .style5 {color: #FF0000}
 -->
+
+table { font-size:12px;border-collapse: collapse; border-width: 1px;}
+
+
 </style>
 
 
@@ -150,13 +154,13 @@ window.history.back();
 
 <td valign="top" width="50%" >
 <b>
-Exporter: </br><font size="3"><b>SANDAAR AGRO PRIVATE LIMITED</b></font> .   </br>
+Exporter: </br><font size="3"><b><?php echo $_SESSION['myfirmnameeee'] ?></b></font> .   </br>
 
-<span  style="font-size:80%" >Reg.Office : 20053, Civil Line Infront Of Harijan Thana  Tikamgarh State Madhya Pradesh / Country INDIA   Pin code - 472001 </br>
-Mobile +91 7000615952, 9893142537 Tel.: +91 7683-240342  Fax : +91 7683 297329 
-</br> GSTIN:  23ABCCS3959G1ZA
-</br>Email :info@sandaar.com Web.: www.sandaar.com  </br>
-<b>CIN : U51909MP2019PTC049174    </b>
+<span  style="font-size:80%" >
+
+<?php echo $_SESSION['myfirmaddress'] ?>
+
+
 </span>
 </b>
 
@@ -190,7 +194,7 @@ while($row13_lcd = mysql_fetch_array($result13_get_lc))
   { ?>
 
 LC NO:  <?php echo $row13_lcd['lcnumber'] ?> DATED  :    <?php echo date("d-M-Y", strtotime($row13_lcd['lc_date']));  ?>   OF
-<?php echo $row13_lcd['advise_bank'] ?>  <?php echo $row13_lcd['issue_branch'] ?> </br>  
+   <?php echo $row13_lcd['issue_branch'] ?> </br>  
   
  <?php }   ?>
 
@@ -347,7 +351,7 @@ while($row13 = mysql_fetch_array($result13_2))
 WE DO HEREBY CERTIFY THAT THE MERCHANDISE ARE OF INDIAN ORIGIN.
 WE ALSO CERTIFY THAT QUALITY, QUANTITY, RATE, SPECIFICATION OF THE
 MERCHANDISE ARE STRICTLY IN ACCORDANCE WITH PROFORMA INVOICE.</br>
-<b>INDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS
+<b style="font-size:80%" >INDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS
 PORTION ONLY)
 WE INTEND TO CLAIM REWARDS UNDER MEIS SCHEME.
 MANUFACTURER: - RAIC INTEGRATED SPONGE & POWER PRIVATE LIMITED,
@@ -370,15 +374,17 @@ PACKING DETAILS: EXPORT STANDARD LOOSE </b>
 
 <table width="100%"  align="center" style="font-weight:bold;"   id = "newtable"  border="1">
 
- <tr  style="font-size:80%"> <td   width="50%" > 
+ <tr  style="font-size:80%"> <td   width="50%" valign="top" > 
  This is to certify that the merchandise are of Indian Origin.  </br></br>
  
  
  Declaration:  </br></br> 
 We declare that this packing list shows the actual quantity of the
 goods described and that all particulars are true and correct. 
- </td>  <td width="50%"  >  For SANDAAR AGRO PRIVATE LIMITED  </br>
+ </td>  <td width="50%"  valign="top" >  For SANDAAR AGRO PRIVATE LIMITED  </br>
 
+</br>
+</br>
 </br>
 </br>
 

@@ -107,7 +107,7 @@ catch(PDOException $e) {
 -->
 
 
-table { font-size:12px;border-collapse: collapse; border-width: 2px;}
+table { font-size:12px;border-collapse: collapse; border-width: 1px;}
 </style>
 
 
@@ -194,7 +194,7 @@ while($row13_lcd = mysql_fetch_array($result13_get_lc))
   { ?>
 
 LC NO:  <?php echo $row13_lcd['lcnumber'] ?> DATED  :    <?php echo date("d-M-Y", strtotime($row13_lcd['lc_date']));  ?>   OF
-<?php echo $row13_lcd['advise_bank'] ?>  <?php echo $row13_lcd['issue_branch'] ?> </br>  
+   <?php echo $row13_lcd['issue_branch'] ?> </br>  
   
  <?php }   ?>
  
@@ -311,7 +311,7 @@ Consignee:  </br> <b><?php echo $p_name ?></b><br>  <span  style="font-size:80%"
 <table width="100%"  style="font-weight:bold;" >   
 <tr>  <td> Marks & Nos. /</br> Container No.  </td>  <td> No. & Kind </br> of Pkgs.   </td>  <td width="60%"  align = "center"> Description of Goods   </td>   </tr>
 
-</table> </td>   <td align = "center" style="font-weight:bold;"  > QTY  </td>  <td align = "center" style="font-weight:bold;"  >  Rate  </td>  <td  align = "center"  style="font-weight:bold;" > Amount  </td>  </tr>
+</table> </td>   <td align = "center" style="font-weight:bold;"  > QTY  </td>  <td align = "center" style="font-weight:bold;"  >  Rate</br><?php   echo $curr_name ?>  </td>  <td  align = "center"  style="font-weight:bold;" > Amount</br><?php   echo $curr_name ?>  </td>  </tr>
 
 
 	<?php
@@ -389,7 +389,7 @@ while($row13_con = mysql_fetch_array($result13_cond_com))
  </td><td>  </td><td>  </td><td>  </td>  </tr>
  
  
- <tr style="font-weight:bold;" style="font-size:80%"  > <td colspan="2">  Amount Chargeable (In Words) - <?php   echo $curr_name ?> - 
+ <tr style="font-weight:bold;" style="font-size:80%"  > <td colspan="2">  Amount Chargeable (In Words) - <?php   echo $curr_name ?>  
 
 <?php  $cheque_amt = $net_amt ; try  {  echo convert_number($cheque_amt) ;
     }
@@ -398,7 +398,7 @@ catch(Exception $e)
     echo $e->getMessage();
     }    ?>     </td>
 
-   <td  colspan="4" > Total:   <?php   echo $curr_name ?> -  <?php echo $net_amt  ?>   </td>  </tr>
+   <td  colspan="4" align="right">  Total:   <?php   echo $curr_name ?>   <?php echo $net_amt  ?> &nbsp&nbsp   </td>  </tr>
  
  
 
@@ -406,11 +406,13 @@ catch(Exception $e)
 
 <table width="100%"  align="center" style="font-weight:bold;"   id = "newtable"  border="1">
 
- <tr style="font-size:80%" > <td  > Declaration:  </br></br> 
+ <tr style="font-size:80%"  width="60%" > <td  valign="top" > Declaration:  </br></br> 
 We declare that this Invoice shows the actual price of the goods
 described and that all particulars are true and correct.
- </td>  <td >  For SANDAAR AGRO PRIVATE LIMITED  </br>
+ </td>  <td  width="40%" >  For SANDAAR AGRO PRIVATE LIMITED  </br>
 
+</br>
+</br>
 </br>
 </br>
 

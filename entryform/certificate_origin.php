@@ -179,13 +179,9 @@ Certificate of Origin No. <?php  echo $row['com_inv_2'];  ?>/COO/<?php  echo $ro
 
 Exporter: </br></br>
 
-SANDAAR AGRO PRIVATE LIMITED </br>
+<?php echo $_SESSION['myfirmnameeee'] ?> </br>
 <span style="font-size:80%">
-Reg.Office : 20053, Civil Line Infront Of Harijan Thana     Tikamgarh State Madhya Pradesh / Country INDIA   Pin code - 472001</br>
-Mobile +91 7000615952, 9893142537 Tel.: +91 7683-240342  Fax : +91 7683 297329 
-</br> GSTIN:  23ABCCS3959G1ZA
-</br>Email :info@sandaar.com Web.: www.sandaar.com  </br>
-<b>CIN : U51909MP2019PTC049174 
+<?php echo $_SESSION['myfirmaddress'] ?>
 
 </span>
  </td>  <td valign="top"> Buyer: </br> </br>
@@ -222,7 +218,7 @@ while($row13_lcd = mysql_fetch_array($result13_get_lc))
   { ?>
 
  Documentary Credit No. <?php echo $row13_lcd['lcnumber'] ?> DATED  :    <?php echo date("d-M-Y", strtotime($row13_lcd['lc_date']));  ?>   OF
-<?php echo $row13_lcd['advise_bank'] ?>  <?php echo $row13_lcd['issue_branch'] ?> </br>  
+   <?php echo $row13_lcd['issue_branch'] ?> </br>  
   
  <?php }   ?>
  
