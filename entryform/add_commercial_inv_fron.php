@@ -668,6 +668,15 @@ document.form1.trandname.value = content;
 		 function myFunction()
 {
 	
+p1=document.form1.deltermssssss.value;
+if(p1=="" || p1=="0")
+{
+	alert("Please fill Terms of Delivery  ...")
+	document.form1.deltermssssss.focus();
+	return false
+}
+	
+	
 var pinv="";
 
 p1=document.form1.consigneeid.value;

@@ -258,7 +258,7 @@ window.history.back();
 
 
  <td width="50%" valign="top" style="font-size:90%" s> 
-GOODS CONSIGNED TO 
+GOODS CONSIGNED TO THE ORDER OF
 <?php 
 $result13_33 = mysql_query("SELECT `tab_auto_id`, `issue_branch`, DATE_FORMAT(date_of_issue,'%d/%m/%Y') as date_of_issue, DATE_FORMAT(lc_date,'%d/%m/%Y') as lc_date, `currency`, `amt_of_lc`, `form_of_lc`, `tolerance`, DATE_FORMAT(expdate,'%d/%m/%Y') as expdate, `exp_place`, `advise_bank`, `benefeitiary_details`, `othersss`, `proforma_id`, `lcnumber` FROM `proforma_lc_details` WHERE  proforma_id=$proforma_id"); 
 while($row17 = mysql_fetch_array($result13_33))
@@ -269,7 +269,7 @@ while($row17 = mysql_fetch_array($result13_33))
 ?>  </br>
 
 
-<b> Notify : </b>
+<b> Notify Buyer: </b>
 
 <?php echo $p_name_ss  ?> </br>
 <?php echo $off_addr1_ss  ?> </br>

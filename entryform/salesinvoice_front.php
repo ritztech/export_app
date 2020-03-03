@@ -628,6 +628,15 @@ if(p1=="0")
 	return false
 }
 
+p1=document.form1.deltermssssss.value;
+if(p1=="")
+{
+	alert("Please fill Terms of Delivery  ...")
+	document.form1.deltermssssss.focus();
+	return false
+}
+
+
 
 
 
@@ -949,7 +958,7 @@ Exporter  ref : <input type="text"   size = "30"  value = "IEC : ABCCS3959G" id=
 		
 		</tr>
 		
-		<tr>  <td> Delivery & Payment Terms:  ::  <input type="text"   size = "50" name="deltermssssss" id="deltermssssss" />   </td> </tr>
+		<tr>  <td> Delivery & Payment Terms:  ::  <input type="text"   value = "" size = "50" name="deltermssssss" id="deltermssssss" />   </td> </tr>
 		
 		</table>
 		

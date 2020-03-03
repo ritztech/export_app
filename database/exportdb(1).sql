@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 18, 2020 at 01:25 PM
+-- Generation Time: Mar 03, 2020 at 03:07 AM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `appuser` (
 --
 
 INSERT INTO `appuser` (`uid`, `uname`, `pwd`, `username`, `address`, `mobile`, `securitylevel`, `sdate`, `enddate`, `status`, `newuser`, `fid`, `fname`) VALUES
-(82, 'sandar', '0145bd5070d84c1', 'SANDAAR', 'aa', '898888', 'ADMIN', '2019-04-01', '2020-03-31', 'ACTIVE', 'OLD', 16, 'SANDAAR AGRO');
+(82, 'sandar', '68c5346c45e90b1', 'SANDAAR', 'aa', '898888', 'ADMIN', '2019-04-01', '2020-03-31', 'ACTIVE', 'OLD', 16, 'SANDAAR AGRO');
 
 -- --------------------------------------------------------
 
@@ -201,37 +201,24 @@ CREATE TABLE IF NOT EXISTS `commercial_in_main` (
   `ppbilldateee` date NOT NULL,
   `ppqtyyy` varchar(50) NOT NULL,
   `master_conditions` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `commercial_in_main`
 --
 
 INSERT INTO `commercial_in_main` (`consigneeid`, `proforma_inv`, `proforma_date`, `export_ref`, `buyrefno_date`, `cntry_origin`, `cntry_final`, `pre_carr_by`, `place_of_rec_per`, `vessel`, `port_of_laod`, `port_of_dis`, `final_dest`, `del_terms`, `extra_notes`, `incoterm`, `curency`, `bankid`, `shippartyidd`, `fid`, `comm_id`, `invoice_no`, `inv_date`, `com_inv_2`, `comm_inv_3`, `proforma_id`, `truckno`, `ppname`, `ppiddd`, `ppgstn`, `ppbillno`, `ppbilldateee`, `ppqtyyy`, `master_conditions`) VALUES
-(3020, 'MJ 101', '2020-02-14', 'EXP 101', 'Talk ovre phone on 14/02/2020', 'India', 'Nepal', 'Road', 'p1', 'v1', 'pol1', 'pod1', 'fd1', 'some remarks', 'ex notes', 'EX-WORK', 1, 1, 3020, 16, 3, '1', '2020-02-15', 'STL', 'G/19-20', 18, '', '', 0, '', '', '0000-00-00', '', ''),
-(3020, 'MJ 101', '2020-02-14', 'EXP 101', 'Talk ovre phone on 14/02/2020', 'India', 'Nepal', 'Road', 'p1', 'v1', 'pol1', 'pod1', 'fd1', 'some remarks', 'ex notes', 'EX-WORK', 1, 1, 3020, 16, 4, '420', '2020-02-15', 'STL', 'G/19-20', 18, '', '', 0, '', '', '0000-00-00', '', ''),
-(3019, 'a', '2020-02-15', 'a', 'a', 'India', '0', 'Road', '0', '0', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3019, 16, 5, '421', '2020-02-15', 'STL', 'G/19-20', 19, '', '', 0, '', '', '0000-00-00', '', ''),
-(3022, 'inv 9721045', '2020-02-15', 'some data', 'sss', 'India', 'aaa', 'Road', '0', '0', '0', '0', '0', '0', '0', 'EX-WORK', 2, 1, 3022, 16, 7, '423', '2020-02-15', 'STL', 'G/19-20', 20, '', '', 0, '', '', '0000-00-00', '', ''),
-(3019, 'mp041515415', '2020-02-15', 'a', '0', 'India', '0', 'Road', '0', 'AP1054545', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3019, 16, 8, '424', '2020-02-15', 'STL', 'G/19-20', 23, '', '', 0, '', '', '0000-00-00', '', ''),
-(3019, 'mp041515415', '2020-02-15', 'a', '0', 'India', '0', 'Road', '0', 'AP1054545', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3019, 16, 10, '426', '2020-02-15', 'STL', 'G/19-20', 23, '', '', 0, '', '', '0000-00-00', '', ''),
-(3020, 'UP93q0314', '2020-02-15', 'a', 'as', 'India', 'Nepal', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 3, 1, 3020, 16, 11, '427', '2020-02-15', 'STL', 'G/19-20', 24, '', '', 0, '', '', '0000-00-00', '', ''),
-(3020, 'UP93q0314', '2020-02-15', 'a', 'as', 'India', 'Nepal', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 3, 1, 3020, 16, 12, '427', '2020-02-15', 'STL', 'G/19-20', 24, 'AP778787878', '', 0, '', '', '0000-00-00', '', ''),
-(3020, 'SAN/2019-2020/15', '2020-02-17', '0', 'tall', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3020, 16, 13, '2019-2020', '2020-02-17', 'SAN', '15A', 27, '0', '', 0, '', '', '0000-00-00', '', ''),
-(3020, 'SAN/2019-2020/15', '2020-02-17', '0', 'tall', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3020, 16, 14, '15A', '2020-02-17', 'SAN', '2019-2020', 27, '0', '', 0, '', '', '0000-00-00', '', ''),
-(3020, 'SAN/2019-2020/15', '2020-02-17', '0', 'tall', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3020, 16, 15, '15A', '2020-02-17', 'SAN', '2019-2020', 27, '0', 'MOHD AJAHAR', 3021, 'GSTIN880809890', '101', '2020-02-17', '10', ''),
-(3020, 'SAN/2019-2020/15', '2020-02-17', '0', 'tall', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3020, 16, 16, '15A', '2020-02-17', 'SAN', '2019-2020', 27, '0', 'AFTABALI SHAUKATALI', 3020, 'ABGPK2106A', '101', '2020-02-17', '1000', ''),
-(3020, 'SAN/2019-2020/15', '2020-02-17', '0', 'tall', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3020, 16, 17, '15B', '2020-02-17', 'SAN', '2019-2020', 27, '0', 'MOHD AJAHAR', 3021, 'GSTIN880809890', '101', '2020-02-17', '100', ''),
-(3022, 'SAN/2019-2020/16', '2020-02-17', '0', 'aa', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 2, 1, 3022, 16, 18, '16E', '2020-02-18', 'SAN', '2019-2020', 28, '0', 'RAMNIWAS LAUTU YADAV', 3022, '0', 'a', '2020-02-18', '100', ''),
-(3022, 'SAN/2019-2020/16', '2020-02-17', '0', 'aa', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 2, 1, 3022, 16, 19, '16F', '2020-02-18', 'SAN', '2019-2020', 28, '0', 'RAMNIWAS LAUTU YADAV', 3022, '0', 'a', '2020-02-18', '50', ''),
-(3022, 'SAN/2019-2020/16', '2020-02-17', '0', 'aa', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 2, 1, 3022, 16, 20, '16G', '2020-02-18', 'SAN', '2019-2020', 28, '0', 'ABBASH TRANSPORT COMPANY', 3019, '0', '101', '2020-02-18', '100', ''),
-(3022, 'SAN/2019-2020/16', '2020-02-17', '0', 'aa', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 2, 1, 3022, 16, 21, '16H', '2020-02-18', 'SAN', '2019-2020', 28, '0', 'RAMNIWAS LAUTU YADAV', 3022, '0', '101', '2020-02-18', '100', 'WE DO HEREBY CERTIFY THAT THE MERCHANDISE ARE OF INDIAN ORIGIN. WE ALSO CERTIFY THAT QUALITY, QUANTITY, RATE, SPECIFICATION OF THE MERCHANDISE ARE STRICTLY IN ACCORDANCE WITH PROFORMA INVOICE.\r\nINDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS PORTION ONLY) WE INTEND TO CLAIM REWARDS UNDER MEIS SCHEME.'),
-(3022, 'SAN/2019-2020/16', '2020-02-17', '0', 'aa', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 2, 1, 3022, 16, 22, '16I', '2020-02-18', 'SAN', '2019-2020', 28, '0', 'ARVIND EMPORIUM PVT. LTD. NEPAL', 3018, '302922329', '101', '2020-02-18', '100', 'WE DO HEREBY CERTIFY THAT THE MERCHANDISE ARE OF INDIAN ORIGIN. WE ALSO CERTIFY THAT QUALITY, QUANTITY, RATE, SPECIFICATION OF THE MERCHANDISE ARE STRICTLY IN ACCORDANCE WITH PROFORMA INVOICE.\r\nINDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS PORTION ONLY) WE INTEND TO CLAIM REWARDS UNDER MEIS SCHEME.'),
-(3022, 'SAN/2019-2020/16', '2020-02-17', '0', 'aa', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 2, 1, 3022, 16, 23, '16J', '2020-02-18', 'SAN', '2019-2020', 28, '0', 'DIRECT-CG CEMENT NEPAL', 3023, '0', '10', '2020-02-18', 'aa', 'WE DO HEREBY CERTIFY THAT THE MERCHANDISE ARE OF INDIAN ORIGIN. WE ALSO CERTIFY THAT QUALITY, QUANTITY, RATE, SPECIFICATION OF THE MERCHANDISE ARE STRICTLY IN ACCORDANCE WITH PROFORMA INVOICE.\r\nINDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS PORTION ONLY) WE INTEND TO CLAIM REWARDS UNDER MEIS SCHEME.'),
-(3022, 'SAN/2019-2020/16', '2020-02-17', '0', 'aa', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 2, 1, 3022, 16, 24, '16K', '2020-02-18', 'SAN', '2019-2020', 28, '0', 'AFTABALI SHAUKATALI', 3020, 'ABGPK2106A', '101', '2020-02-18', '501', 'WE DO HEREBY CERTIFY THAT THE MERCHANDISE ARE OF INDIAN ORIGIN. WE ALSO CERTIFY THAT QUALITY, QUANTITY, RATE, SPECIFICATION OF THE MERCHANDISE ARE STRICTLY IN ACCORDANCE WITH PROFORMA INVOICE.\r\nINDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS PORTION ONLY) WE INTEND TO CLAIM REWARDS UNDER MEIS SCHEME.'),
-(3022, 'SAN/2019-2020/16', '2020-02-17', '0', 'aa', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 2, 1, 3022, 16, 25, '16L', '2020-02-18', 'SAN', '2019-2020', 28, '0', 'RAMNIWAS LAUTU YADAV', 3022, '0', '101', '2020-02-18', '100', 'WE DO HEREBY CERTIFY THAT THE MERCHANDISE ARE OF INDIAN ORIGIN. WE ALSO CERTIFY THAT QUALITY, QUANTITY, RATE, SPECIFICATION OF THE MERCHANDISE ARE STRICTLY IN ACCORDANCE WITH PROFORMA INVOICE.\r\nINDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS PORTION ONLY) WE INTEND TO CLAIM REWARDS UNDER MEIS SCHEME.'),
-(3022, 'SAN/2019-2020/16', '2020-02-17', '0', 'aa', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 2, 1, 3022, 16, 26, '16M', '2020-02-18', 'SAN', '2019-2020', 28, '0', 'MOHD AJAHAR', 3021, 'GSTIN880809890', '501', '2020-02-18', '100', 'WE DO HEREBY CERTIFY THAT THE MERCHANDISE ARE OF INDIAN ORIGIN. WE ALSO CERTIFY THAT QUALITY, QUANTITY, RATE, SPECIFICATION OF THE MERCHANDISE ARE STRICTLY IN ACCORDANCE WITH PROFORMA INVOICE.\r\nINDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS PORTION ONLY) <b> WE INTEND TO CLAIM REWARDS UNDER MEIS SCHEME. </b>'),
-(3020, 'SAN/2019-2020/17', '2020-02-18', 'ref no', 'discc', 'India', 'nepal', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3020, 16, 27, '17A', '2020-02-18', 'SAN', '2019-2020', 29, '0', 'AMBAY STEELS PRIVATE LIMITED', 3066, '302922329', '2525', '2020-02-17', '25.00', 'WE DO HEREBY CERTIFY THAT THE MERCHANDISE ARE OF INDIAN ORIGIN. WE ALSO CERTIFY THAT QUALITY, QUANTITY, RATE, SPECIFICATION OF THE MERCHANDISE ARE STRICTLY IN ACCORDANCE WITH PROFORMA INVOICE.\r\nINDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS PORTION ONLY) WE INTEND TO CLAIM REWARDS UNDER MEIS SCHEME.'),
-(3067, 'SAN/2019-2020/19', '2020-02-18', 'some ref number', 'Phone dicussion on 12/12/2019', 'India', 'Nepal', 'Road', 'India', 'By Truck', 'DURGAPUR, INDIA', 'BHAIRAHAWA, NEPAL VIA CUSTOMS ENTRY POINT IN NEPAL: BHAIRAHAWA CUSTOMS OFFICE, BHAIRAHAWA, NEPAL', 'Nepal', 'EX-WORKS DURGAPUR', '0', 'EX-WORK', 1, 1, 3067, 16, 32, '19B', '2020-02-18', 'SAN', '2019-2020', 31, '0', 'RAIC INTEGRATED SPONGE & POWER PRIVATE LIMITED', 3068, '19AACCB3462A1Z4', 'R250', '2020-02-18', '75', 'WE DO HEREBY CERTIFY THAT THE MERCHANDISE ARE OF INDIAN ORIGIN. WE ALSO CERTIFY THAT QUALITY, QUANTITY, RATE, SPECIFICATION OF THE MERCHANDISE ARE STRICTLY IN ACCORDANCE WITH PROFORMA INVOICE.\r\nINDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS PORTION ONLY) WE INTEND TO CLAIM REWARDS UNDER MEIS SCHEME.');
+(3022, 'MP04 test invoice', '2020-02-16', 'exp ref', 'talk on phone', 'India', 'Nepal', 'Road', '0', 'By Truck', '0', '0', '0', 'EX work India', 'my notes abou this proforma', 'FOB', 2, 1, 3022, 16, 14, '502', '2020-02-16', 'STL', 'G/19-20', 20, 'AP9AY65155', '', 0, '', '', '0000-00-00', '', ''),
+(3066, 'SAN/2019-2020/13', '2020-02-16', '0', 'email DT 15.2.2020', 'INDIA', 'NEPAL', 'Road', 'INDIA', 'BY ROAD', 'EXW DURGAPUR', 'BHAIRWAHA', 'BHAIRWAHA', 'IRRECOVERABLE LC', '0', 'EX-WORK', 1, 1, 3066, 16, 16, '13', '2020-02-16', 'STL', 'G/19-20', 19, '0', '', 0, '', '', '0000-00-00', '', ''),
+(3021, 'SAN/2019-2020/1', '2020-02-18', 'Exporter r', 'Talk ovre phone on 14/02/2020', 'India', 'Nepal', 'Road', 'India', 'By Truck', 'Kolkata', 'Bangladesh', 'Nepal katmandu', '0', '0', 'EX-WORK', 1, 1, 3021, 16, 17, '1A', '2020-02-18', 'SAN', '2019-2020', 21, 'AP9AY65155', 'DIRECT-CG CEMENT NEPAL', 3023, 'GST686687', 'R501', '2020-02-18', '100', 'WE DO HEREBY CERTIFY THAT THE MERCHANDISE ARE OF INDIAN ORIGIN. WE ALSO CERTIFY THAT QUALITY, QUANTITY, RATE, SPECIFICATION OF THE MERCHANDISE ARE STRICTLY IN ACCORDANCE WITH PROFORMA INVOICE.\r\nINDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS PORTION ONLY) WE INTEND TO CLAIM REWARDS UNDER MEIS SCHEME.'),
+(3067, 'SAN/2019-2020/100', '2020-02-18', '0', 'E mail Dt 28-8-2020', 'India', 'NEPAL', 'Road', 'INDIA', 'By Truck', 'DURGAPUR INDIA', 'BHAIRWAHA NEPAL', 'NEPAL', 'EXW DURGAPUR INDIA WEST BANGAL & CONFIRM BANKERS L/C PAYABLE AT SIGHT', '0', 'EX-WORK', 1, 1, 3067, 16, 18, '100A', '2020-02-18', 'SAN', '2019-2020', 23, 'MP36H0648', 'PURULIA METAL CASTING PRIVATE LIMITED', 3068, '19AADCP4189P1ZK', 'PMC-04391/19-20', '2020-02-18', '80.25', 'WE DO HEREBY CERTIFY THAT THE MERCHANDISE ARE OF INDIAN ORIGIN. WE ALSO CERTIFY THAT QUALITY, QUANTITY, RATE, SPECIFICATION OF THE MERCHANDISE ARE STRICTLY IN ACCORDANCE WITH PROFORMA INVOICE.\r\n* INDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS PORTION ONLY)\r\n* WE INTEND TO CLAIM REWARDS UNDER MEIS SCHEME. \r\n* That The Merchandise is of India Origin.'),
+(3067, 'SAN/2019-2020/100', '2020-02-18', '0', 'E mail Dt 28-8-2020', 'India', 'NEPAL', 'Road', 'INDIA', 'By Truck', 'DURGAPUR INDIA', 'BHAIRWAHA NEPAL', 'NEPAL', 'EXW DURGAPUR INDIA WEST BANGAL & CONFIRM BANKERS L/C PAYABLE AT SIGHT', '0', 'EX-WORK', 1, 1, 3067, 16, 20, '100B', '2020-02-19', 'SAN', '2019-2020', 23, '0', 'PURULIA METAL CASTING PRIVATE LIMITED', 3068, '19AADCP4189P1ZK', '1525', '2020-02-19', '80.25', 'WE DO HEREBY CERTIFY THAT THE MERCHANDISE ARE OF INDIAN ORIGIN. WE ALSO CERTIFY THAT QUALITY, QUANTITY, RATE, SPECIFICATION OF THE MERCHANDISE ARE STRICTLY IN ACCORDANCE WITH PROFORMA INVOICE.\r\nINDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS PORTION ONLY) WE INTEND TO CLAIM REWARDS UNDER MEIS SCHEME.'),
+(3067, 'SAN/2019-2020/100', '2020-02-18', '0', 'E mail Dt 28-8-2020', 'India', 'NEPAL', 'Road', 'INDIA', 'By Truck', 'DURGAPUR INDIA', 'BHAIRWAHA NEPAL', 'NEPAL', 'EXW DURGAPUR INDIA WEST BANGAL & CONFIRM BANKERS L/C PAYABLE AT SIGHT', '0', 'EX-WORK', 1, 1, 3067, 16, 21, '100C', '2020-01-09', 'SAN', '2019-2020', 23, '0', 'PURULIA METAL CASTING PRIVATE LIMITED', 3068, '19AADCP4189P1ZK', 'R-25145', '2020-02-19', '85.25', 'WE DO HEREBY CERTIFY THAT THE MERCHANDISE ARE OF INDIAN ORIGIN. WE ALSO CERTIFY THAT QUALITY, QUANTITY, RATE, SPECIFICATION OF THE MERCHANDISE ARE STRICTLY IN ACCORDANCE WITH PROFORMA INVOICE.\r\nINDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS PORTION ONLY) WE INTEND TO CLAIM REWARDS UNDER MEIS SCHEME.'),
+(3067, 'SAN/2019-2020/100', '2020-02-18', '0', 'E mail Dt 28-8-2020', 'India', 'NEPAL', 'Road', 'INDIA', 'By Truck', 'DURGAPUR INDIA', 'BHAIRWAHA NEPAL', 'NEPAL', 'EXW DURGAPUR INDIA WEST BANGAL & CONFIRM BANKERS L/C PAYABLE AT SIGHT', '0', 'EX-WORK', 1, 1, 3067, 16, 22, '100D', '2020-01-09', 'SAN', '2019-2020', 23, '0', 'PURULIA METAL CASTING PRIVATE LIMITED', 3068, '19AADCP4189P1ZK', 'R-25145', '2020-02-19', '85.25', 'WE DO HEREBY CERTIFY THAT THE MERCHANDISE ARE OF INDIAN ORIGIN. WE ALSO CERTIFY THAT QUALITY, QUANTITY, RATE, SPECIFICATION OF THE MERCHANDISE ARE STRICTLY IN ACCORDANCE WITH PROFORMA INVOICE.\r\nINDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS PORTION ONLY) WE INTEND TO CLAIM REWARDS UNDER MEIS SCHEME.'),
+(3070, 'SAN/2019-2020/48', '2020-02-20', '0', '0', 'India', 'NEPAL', 'Road', 'INDIA', 'By Truck', 'DURGAPUR WESTBANGAL', 'BHAIRAWAHA CUSTOMS OFFICE BY ROAD', 'NEPAL', 'EX.WORKS DURGAPUR WEST BANGAL INDIA PAYMENT 100% OF INOVICE VALUE UNDER AT SIGHT', '0', 'EX-WORK', 1, 1, 3070, 16, 26, '48B', '2019-09-21', 'SAN', '2019-2020', 24, 'MP36H0648', 'PURULIA METAL CASTING PRIVATE LIMITED', 3068, '19AADCP4189P1ZK', 'R-3626', '2020-02-20', '210.750', 'WE DO HEREBY CERTIFY THAT THE MERCHANDISE ARE OF INDIAN ORIGIN. WE ALSO CERTIFY THAT QUALITY, QUANTITY, RATE, SPECIFICATION OF THE MERCHANDISE ARE STRICTLY IN ACCORDANCE WITH PROFORMA INVOICE.\r\nINDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS PORTION ONLY) WE INTEND TO CLAIM REWARDS UNDER MEIS SCHEME.'),
+(3070, 'SAN/2019-2020/48', '2019-09-21', '0', '0', 'India', 'NEPAL', 'Road', 'INDIA', 'By Truck', 'DURGAPUR WESTBANGAL', 'BHAIRAWAHA CUSTOMS OFFICE BY ROAD', 'NEPAL', 'EX.WORKS DURGAPUR WEST BANGAL INDIA PAYMENT 100% OF INOVICE VALUE UNDER AT SIGHT', '0', 'EX-WORK', 1, 1, 3069, 16, 27, '48C', '2019-09-21', 'SAN', '2019-2020', 24, 'MP36H0195', 'PURULIA METAL CASTING PRIVATE LIMITED', 3068, '19AADCP4189P1ZK', 'R-0146', '2020-02-20', '210.750', '* WE DO HEREBY CERTIFY THAT THE MERCHANDISE ARE OF INDIAN ORIGIN. \r\n* WE ALSO CERTIFY THAT QUALITY, QUANTITY, RATE, SPECIFICATION OF THE MERCHANDISE ARE STRICTLY IN \r\n  ACCORDANCE WITH PROFORMA INVOICE.\r\n* INDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS PORTION ONLY) WE INTEND TO CLAIM \r\n  REWARDS UNDER MEIS SCHEME.'),
+(3066, 'SAN/2019-2020/278', '2020-01-06', '0', 'EMAIL DT 03-01-2020', 'India', '0', 'Road', 'INDIA', 'By Truck', 'DURGAPUR INDIA', 'BHAIRAHAWA NEPAL VIA CUSTOMS ENTRY POINT IN NEPAL BHAIRAHAWA CUSTOMS OFFICE BHAIRAHAWA NEPAL', 'NEPAL', 'EX-WORKS DURGAPUR', '0', 'EX-WORK', 1, 1, 3066, 16, 28, '278A', '2020-02-21', 'SAN', '2019-2020', 25, 'JH02AS1074', 'PURULIA METAL CASTING PRIVATE LIMITED', 3068, '19AADCP4189P1ZK', 'R-252', '2020-02-21', '75.06', 'WE DO HEREBY CERTIFY THAT THE MERCHANDISE ARE OF INDIAN ORIGIN. WE ALSO CERTIFY THAT QUALITY, QUANTITY, RATE, SPECIFICATION OF THE MERCHANDISE ARE STRICTLY IN ACCORDANCE WITH PROFORMA INVOICE.\r\nINDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS PORTION ONLY) WE INTEND TO CLAIM REWARDS UNDER MEIS SCHEME.'),
+(3071, 'SAN/2019-2020/13', '2020-02-29', 'IEC : ABCCS3959G', 'Dt 28/2/2020 Telephonic Talk', 'India', 'NEPAL', 'Road', 'INDIA', 'By Truck', 'DURGAPUR WEST BANGAL', 'N.A.', 'NEPAL', 'By Irrevocable LC 100% at Sight.', '0', 'EX-WORK', 1, 1, 3071, 16, 29, '13A', '2020-03-02', 'SAN', '2019-2020', 26, 'a898', 'ARVIND EMPORIUM PVT. LTD. NEPAL', 3018, '302922329', '101', '2020-03-02', '100', 'WE DO HEREBY CERTIFY THAT THE MERCHANDISE ARE OF INDIAN ORIGIN. WE ALSO CERTIFY THAT QUALITY, QUANTITY, RATE, SPECIFICATION OF THE MERCHANDISE ARE STRICTLY IN ACCORDANCE WITH PROFORMA INVOICE.\r\nINDIAN CUSTOMS CLEARANCE THROUGH DUTY DRAWBACK SCHEME (CUSTOMS PORTION ONLY) WE INTEND TO CLAIM REWARDS UNDER MEIS SCHEME.');
 
 -- --------------------------------------------------------
 
@@ -244,17 +231,7 @@ CREATE TABLE IF NOT EXISTS `comm_inv_conditions` (
   `po_1` text NOT NULL,
   `po_2` text NOT NULL,
   `poid` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `comm_inv_conditions`
---
-
-INSERT INTO `comm_inv_conditions` (`auto_id`, `po_1`, `po_2`, `poid`) VALUES
-(11, '0', 'EXW Durgapur , west Bengal India', 25),
-(12, '0', 'some new conditions', 25),
-(13, '0', 'some new conditions', 28),
-(14, '0', 'some new conditions 2', 28);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -275,38 +252,24 @@ CREATE TABLE IF NOT EXISTS `comm_in_items` (
 `comm_item_id` int(11) NOT NULL,
   `comm_inv_id` int(11) NOT NULL,
   `bags` float NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `comm_in_items`
 --
 
 INSERT INTO `comm_in_items` (`item_id`, `goods_descr`, `hsncode`, `unit`, `qty`, `rate`, `amount`, `item_details`, `gst`, `comm_item_id`, `comm_inv_id`, `bags`) VALUES
-(57, 'MS BILLETS', '7207.1920', 'MTS', 50, 50, 2500.00, '(INDUSTRIAL RAW MATERIAL)', 0, 3, 3, 0),
-(57, 'MS BILLETS', '7207.1920', 'MTS', 1000, 50, 50000.00, '(INDUSTRIAL RAW MATERIAL)', 0, 4, 4, 0),
-(57, 'MS BILLETS', '7207.1920', 'MTS', 20, 10, 236.00, '(INDUSTRIAL RAW MATERIAL)', 18, 5, 5, 70),
-(55, 'FLY ASH', '2621', 'MTS', 20, 100, 2000.00, '(DRY FLY ASH)', 0, 6, 5, 1),
-(57, 'MS BILLETS', '7207.1920', 'MTS', 20, 100, 2000.00, '(INDUSTRIAL RAW MATERIAL)', 0, 9, 7, 20),
-(57, 'MS BILLETS', '7207.1920', 'MTS', 10, 120, 1200.00, '(INDUSTRIAL RAW MATERIAL)', 0, 10, 7, 10),
-(57, 'MS BILLETS', '7207.1920', 'MTS', 20, 150, 3000.00, '(INDUSTRIAL RAW MATERIAL)', 0, 11, 8, 0),
-(57, 'MS BILLETS', '7207.1920', 'MTS', 20, 150, 3000.00, '(INDUSTRIAL RAW MATERIAL)', 0, 13, 10, 50),
-(52, 'COAL', '2701', 'MTS', 5, 105, 525.00, '0', 0, 14, 12, 0),
-(52, 'COAL', '2701', 'MTS', 10, 50, 500.00, '0', 0, 15, 13, 0),
-(52, 'COAL', '2701', 'MTS', 10, 50, 500.00, '0', 0, 16, 14, 0),
-(52, 'COAL', '2701', 'MTS', 10, 50, 500.00, '0', 0, 17, 15, 0),
-(52, 'COAL', '2701', 'MTS', 10, 50, 500.00, '0', 0, 18, 16, 0),
-(52, 'COAL', '2701', 'MTS', 10, 50, 500.00, '0', 0, 19, 17, 0),
-(54, 'COAL (JHARKHAND CCL)', '2701', 'MTS', 10, 50, 500.00, 'JHARKHAND COAL', 0, 20, 18, 0),
-(54, 'COAL (JHARKHAND CCL)', '2701', 'MTS', 10, 50, 500.00, 'JHARKHAND COAL', 0, 21, 19, 0),
-(54, 'COAL (JHARKHAND CCL)', '2701', 'MTS', 10, 50, 500.00, 'JHARKHAND COAL', 0, 22, 20, 0),
-(54, 'COAL (JHARKHAND CCL)', '2701', 'MTS', 10, 50, 500.00, 'JHARKHAND COAL', 0, 23, 21, 0),
-(54, 'COAL (JHARKHAND CCL)', '2701', 'MTS', 10, 50, 500.00, 'JHARKHAND COAL', 0, 24, 22, 0),
-(54, 'COAL (JHARKHAND CCL)', '2701', 'MTS', 10, 50, 500.00, 'JHARKHAND COAL', 0, 25, 23, 0),
-(54, 'COAL (JHARKHAND CCL)', '2701', 'MTS', 10, 50, 500.00, 'JHARKHAND COAL', 0, 26, 24, 0),
-(54, 'COAL (JHARKHAND CCL)', '2701', 'MTS', 10, 50, 500.00, 'JHARKHAND COAL', 0, 27, 25, 0),
-(54, 'COAL (JHARKHAND CCL)', '2701', 'MTS', 10, 50, 500.00, 'JHARKHAND COAL', 0, 28, 26, 0),
-(57, 'MS BILLETS', '7207.1920', 'MTS', 25, 1000, 25000.00, '(INDUSTRIAL RAW MATERIAL)', 0, 29, 27, 85),
-(57, 'MS BILLETS', '7207.1920', 'MTS', 75.06, 413, 30999.78, '(INDUSTRIAL RAW MATERIAL)', 0, 34, 32, 162);
+(57, 'MS BILLETS', '7207.1920', 'MTS', 50, 100, 5000.00, '(INDUSTRIAL RAW MATERIAL)', 0, 16, 14, 0),
+(57, 'MS BILLETS', '7207.1920', 'MTS', 500, 411, 205500.00, '(INDUSTRIAL RAW MATERIAL)', 0, 18, 16, 162),
+(58, 'MS BILLETS ( SIZE 125MMX125MMX6M)', '7207.19.20', 'MTS', 10, 500, 5000.00, '(NON ALLOY STEEL BILLETS)INDUSTRIAL RAW MATERIAL)SIZE : 125MMX125MMLENTH: 6000MM (+/- 100MM)', 0, 19, 17, 0),
+(58, 'MS BILLETS ( SIZE 125MMX125MMX6M)', '7207.19.20', 'MTS', 80.75, 411, 33188.25, '(NON ALLOY STEEL BILLETS)INDUSTRIAL RAW MATERIAL)SIZE : 125MMX125MMLENTH: 6000MM (+/- 100MM)', 0, 20, 18, 0),
+(58, 'MS BILLETS ( SIZE 125MMX125MMX6M)', '7207.19.20', 'MTS', 80.25, 411, 32982.75, '(NON ALLOY STEEL BILLETS)INDUSTRIAL RAW MATERIAL)SIZE : 125MMX125MMLENTH: 6000MM (+/- 100MM)', 0, 22, 20, 162),
+(58, 'MS BILLETS ( SIZE 125MMX125MMX6M)', '7207.19.20', 'MTS', 85.25, 411, 35037.75, '(NON ALLOY STEEL BILLETS)INDUSTRIAL RAW MATERIAL)SIZE : 125MMX125MMLENTH: 6000MM (+/- 100MM)', 0, 23, 21, 165),
+(58, 'MS BILLETS ( SIZE 125MMX125MMX6M)', '7207.19.20', 'MTS', 75.06, 413, 30999.78, '(NON ALLOY STEEL BILLETS)INDUSTRIAL RAW MATERIAL)SIZE : 125MMX125MMLENTH: 6000MM (+/- 100MM)', 0, 24, 22, 165),
+(58, 'MS BILLETS ( SIZE 125MMX125MMX6M)', '7207.19.20', 'MTS', 210.75, 347, 73130.25, '(NON ALLOY STEEL BILLETS)INDUSTRIAL RAW MATERIAL)SIZE : 125MMX125MMLENTH: 6000MM (+/- 100MM)', 0, 28, 26, 375),
+(58, 'MS BILLETS ( SIZE 125MMX125MMX6M)', '7207.19.20', 'MTS', 210.75, 347, 73130.25, '(NON ALLOY STEEL BILLETS)INDUSTRIAL RAW MATERIAL)SIZE : 125MMX125MMLENTH: 6000MM (+/- 100MM)', 0, 29, 27, 562),
+(57, 'MS BILLETS (100MMX100MMX6M)', '7207.19.20', 'MTS', 75.06, 413, 30999.78, '(INDUSTRIAL RAW MATERIAL)(NON ALLOY STEEL BILLETS)SIZE  : 100MMX100MM X 6M', 0, 30, 28, 162),
+(57, 'NON ALLOY STEEL BILLETS (MS BILLETS)', '7207.19.20', 'MTS', 500, 401, 200500.00, '(INDUSTRIAL RAW MATERIAL) SIZE   : 125MMX125MM +/- 3MM      LENGTH : 6000 MM +/- 100MM      SILICON    : 0.15% TO 0.22%       SUL.& PHOS : 0.120% MAX.          CARBON     : 0.15% TO 0.22%           MANGANES   : 0.50%', 0, 31, 29, 20);
 
 -- --------------------------------------------------------
 
@@ -318,7 +281,7 @@ CREATE TABLE IF NOT EXISTS `condition_master` (
 `tab_id` int(11) NOT NULL,
   `val1` varchar(100) NOT NULL,
   `val2` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `condition_master`
@@ -326,7 +289,19 @@ CREATE TABLE IF NOT EXISTS `condition_master` (
 
 INSERT INTO `condition_master` (`tab_id`, `val1`, `val2`) VALUES
 (1, 'Price', 'EXW Durgapur , west Bengal India'),
-(2, 'tes2', 'some new conditions');
+(2, 'Payment', 'Beneficiary Payable By Irrevocable LC 100% at Sight.'),
+(3, 'Delivery', 'Within 4-6 weeks from the Date of Receipts of Hard copy of LC'),
+(4, 'Packing', 'Export Standard Loose .'),
+(5, 'Transport & Insurence', 'To be arranged By the Byer.'),
+(6, 'Origin', 'INDIA'),
+(7, 'TT Reimbursement', 'To be Allowed'),
+(8, 'Custom Clearance (INDIA)', 'To be arranged by the Byer.'),
+(9, 'Shipment', 'Partial Shipment And Transshipment is Allowed.'),
+(10, 'TOLERANCE', '+/- 5% is Allowed in Value, Quality and Quanitity.'),
+(11, 'Bank Charges', 'All Bank Charges Outside india Will be paid by Byer.'),
+(12, 'Shipment Date', 'Date of Truck Receipts/Consignment Note will be Considered as Shipment Date'),
+(13, 'Issue of Letter of Credit :', 'Fully workable Irrevocable LC to be opened with in 5(Five) working Days form the date of Performa Inovice, Otherwise Seller Right to amend the price'),
+(14, 'Origin country', 'INDIA');
 
 -- --------------------------------------------------------
 
@@ -346,15 +321,23 @@ CREATE TABLE IF NOT EXISTS `currency_exchangee` (
   `remarks` text NOT NULL,
   `year` varchar(100) NOT NULL,
   `curr_master_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `currency_exchangee`
 --
 
 INSERT INTO `currency_exchangee` (`tab_auto_id`, `currencyid`, `startdate`, `enddate`, `import_ex_rate`, `export_ex_rate`, `notice_num`, `notice_date`, `remarks`, `year`, `curr_master_id`) VALUES
-(5, 1, '2020-01-01', '2020-01-15', 72, 74, '45', '2020-01-01', 'aaa', '2019-2020', 1),
-(6, 1, '2020-01-16', '2020-01-30', 72, 75.6, '45', '2020-01-01', 'aaa', '2019-2020', 1);
+(6, 1, '2019-10-03', '2019-10-17', 72.15, 70.45, 'A', '2019-10-04', '0', '2019-2020', 1),
+(7, 1, '2019-10-18', '2019-11-07', 72.3, 70.6, 'B', '2019-10-18', '0', '2019-2020', 1),
+(8, 1, '2019-11-08', '2019-11-21', 72, 70.3, 'B', '2019-11-08', '0', '2019-2020', 1),
+(9, 1, '2019-11-22', '2019-12-05', 72.75, 71.05, 'C', '2019-11-22', '0', '2019-2020', 1),
+(10, 1, '2019-12-06', '2019-12-19', 72.4, 70.7, 'E', '2019-12-06', '0', '2019-2020', 1),
+(11, 1, '2019-12-20', '2020-01-02', 71.9, 70.2, 'G', '2019-12-20', '0', '2019-2020', 1),
+(12, 1, '2020-01-03', '2020-01-16', 72.15, 70.45, '7', '2020-01-02', '0', '2019-2020', 1),
+(13, 1, '2020-01-17', '2020-02-06', 71.65, 69.95, '8', '2020-01-16', '0', '2019-2020', 1),
+(14, 1, '2020-02-07', '2020-02-28', 72.15, 70.45, '9', '2020-02-06', '0', '2019-2020', 1),
+(15, 1, '2019-09-20', '2019-10-02', 72.2, 70.5, '66/2019', '2019-09-19', '0', '2019-2020', 1);
 
 -- --------------------------------------------------------
 
@@ -372,7 +355,7 @@ CREATE TABLE IF NOT EXISTS `currency_master` (
 --
 
 INSERT INTO `currency_master` (`tab_auto_id`, `curr_name`) VALUES
-(1, 'USD'),
+(1, '$USD'),
 (2, 'INR'),
 (3, 'SGD');
 
@@ -409,7 +392,7 @@ CREATE TABLE IF NOT EXISTS `db_bck` (
 --
 
 INSERT INTO `db_bck` (`bck_date`) VALUES
-('18022020');
+('02032020');
 
 -- --------------------------------------------------------
 
@@ -471,7 +454,7 @@ CREATE TABLE IF NOT EXISTS `firmcreation` (
 `fid` int(11) NOT NULL,
   `firmname` varchar(100) NOT NULL,
   `businessfirm` varchar(100) NOT NULL,
-  `officeadd` varchar(250) NOT NULL,
+  `officeadd` text NOT NULL,
   `shopadd` varchar(250) NOT NULL,
   `phonno` varchar(50) NOT NULL,
   `faxnumber` varchar(50) NOT NULL,
@@ -511,7 +494,7 @@ CREATE TABLE IF NOT EXISTS `firmcreation` (
 --
 
 INSERT INTO `firmcreation` (`fid`, `firmname`, `businessfirm`, `officeadd`, `shopadd`, `phonno`, `faxnumber`, `mobile`, `contactperson`, `firmtype`, `email`, `mpvat`, `midate`, `mandilicenseno`, `mandidate`, `cstno`, `cstdate`, `tinno`, `tindate`, `fssaino`, `fdate`, `otherdoc`, `propname`, `place`, `state`, `contactperson1`, `email1`, `itnumber`, `itndate`, `otherdoc1`, `pcontact`, `pstatus`, `bankname`, `banktype`, `bankaccnumber`, `ifsccode`) VALUES
-(16, 'SANDAAR AGRO PRIVATE LIMITED', 'SANDAAR AGRO PRIVATE LIMITED', 'WARD NO 23 H NO 100 CIVIL LINE FIRST FLOUR TIKAMGARH', 'WARD NO 23 H NO 100 CIVIL LINE FIRST FLOUR TIKAMGARH', '9893142537', '', '9893142537', 'MANISH JAIN DIRECTOR', 'Company', 'info@mrpagro.com', '23AALCM7698A1Z9', '2018-10-26', 'M338', '2018-04-13', 'N.A', '2018-04-13', 'U115549MP2018PTC045542', '2018-04-13', '114175100000009', '2018-04-13', 'GST ', 'MANISH KUMAR JAIN', 'TIKAMGARH MP', 'MADHYA PRADESH', 'RAKSHA JAIN DIRETOTR', '', 'AALCM7698A', '2018-04-13', '23AALCM7698A1Z9', '7000615952', 'Director', 'ICICI BANK LIMITED', 'CURRENT', '145005000830', 'ICIC0001450');
+(16, 'SANDAAR AGRO PRIVATE LIMITED', 'SANDAAR AGRO PRIVATE LIMITED', 'Reg.Office : 20053, Civil Line Infront Of Harijan Thana City : Tikamgarh, \r\n Pin code - 472001 State Madhya Pradesh / Country INDIA </br>\r\nMobile +91 7000615952 9893142537 Tel.: +91 7683-240342 Fax : +91 7683 297329 Email : info@sandaar.com  Web.: www.sandaar.com\r\n </br>\r\n<b>GSTN No. : 23ABCCS3959G1ZA IEC : ABCCS3959G Fedration of indian export Membership no. : MPC/157/2019-2020', 'WARD NO 23 H NO 100 CIVIL LINE FIRST FLOUR TIKAMGARH', '9893142537', '', '9893142537', 'MANISH JAIN DIRECTOR', 'Company', 'info@mrpagro.com', '23AALCM7698A1Z9', '2018-10-26', 'M338', '2018-04-13', 'AD231219000703K  dt 11/12/2019', '2018-04-13', 'U115549MP2018PTC045542', '2018-04-13', '114175100000009', '2018-04-13', 'GST ', 'MANISH KUMAR JAIN', 'TIKAMGARH MP', 'MADHYA PRADESH', 'RAKSHA JAIN DIRETOTR', '', 'AALCM7698A', '2018-04-13', '23AALCM7698A1Z9', '7000615952', 'Director', 'ICICI BANK LIMITED', 'CURRENT', '145005000830', 'ICIC0001450');
 
 -- --------------------------------------------------------
 
@@ -686,7 +669,7 @@ CREATE TABLE IF NOT EXISTS `ledger_master` (
   `gstin` varchar(50) NOT NULL,
   `aadhar` varchar(50) NOT NULL,
   `statetype` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3069 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3072 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `ledger_master`
@@ -696,7 +679,7 @@ INSERT INTO `ledger_master` (`leg_name`, `fac_addr`, `off_addr`, `fact_city`, `o
 ('ARVIND EMPORIUM PVT. LTD. NEPAL', 'KRISHNA NAGAR-4 KAPILVASTU NEPAL  PAN NO. 302922329', 'KRISHNA NAGAR-4 KAPILVASTU NEPAL  PAN NO. 302922329', 'NEPAL  PAN NO. 302922329', 'NEPAL  PAN NO. 302922329', '--Select State--', '--Select State--', '302922329', '302922329', '', '7320919293', 'ajaygoel1607@gmail.com', '', '', '', '', '', '2019-11-09', 0, '', 'DR', 0, 0, 1, 3018, 16, 'NIKHIL JI', '', '', '', '', '', '', '', 14, '302922329', '', 0),
 ('ABBASH TRANSPORT COMPANY', 'Reg.Office : Near Verma Sell, Petrol Pump, New Bus stand Road Tikamgarh,', 'Reg.Office : Near Verma Sell, Petrol Pump, New Bus stand Road Tikamgarh,', 'Tikamgarh', 'Tikamgarh', 'Madhya Pradesh', 'Madhya Pradesh', '472001', '472001', '', '9165327042', 'abbash@mrpagro.com', '', '', 'AGWPA7073M', '', '', '2019-11-09', 0, '', 'DR', 0, 1, 0, 3019, 16, 'ABDUL ABBASH', '', '', '', '', '', '', '', 14, '', '', 0),
 ('AFTABALI SHAUKATALI', 'Reg.Office : 48B/24B MINTO ROAD CIVIL LINES ALLHABAD', 'Reg.Office : 48B/24B MINTO ROAD CIVIL LINES ALLHABAD', 'ALLHABAD', 'ALLHABAD', 'Uttar Pradesh', 'Uttar Pradesh', '211001', '211001', '6393968972', '6393968972', 'altafaliallhabad@gmail.com', '', '', 'ABGPK2106A', '', '', '2019-11-09', 0, '', 'DR', 0, 1, 0, 3020, 16, 'AFTABALI SHAUKATALI', '', '', '', '', '', '', '', 14, 'ABGPK2106A', '', 0),
-('MOHD AJAHAR', 'MOHD AJAHAR REG.OFFICE : RUDAPUR MALAK HARHAR UARHAR PRAYAGRAJ', 'MOHD AJAHARREG.OFFICE : RUDAPUR MALAK HARHAR UARHAR PRAYAGRAJ', 'PRAYAGRAJ', 'PRAYAGRAJ', 'UTTAR PRADESH', 'UTTAR PRADESH', '211013', '211013', '', '7755021818', 'AJHARPRAGRAUP@GMAIL.COM', '', '', 'ASCPA0775G', '', '', '2019-11-09', 0, '', 'DR', 0, 1, 0, 3021, 16, 'MOHD AJAHAR', '', '', '', '', '', '', '', 14, 'GSTIN880809890', '', 0),
+('MOHD AJAHAR', 'MOHD AJAHAR Reg.Office : RUDAPUR MALAK HARHAR UARHAR PRAYAGRAJ', 'MOHD AJAHARReg.Office : RUDAPUR MALAK HARHAR UARHAR PRAYAGRAJ', 'PRAYAGRAJ', 'PRAYAGRAJ', 'Uttar Pradesh', 'Uttar Pradesh', '211013', '211013', '', '7755021818', 'Ajharpragraup@gmail.com', '', '', 'ASCPA0775G', '', '', '2019-11-09', 0, '', 'DR', 0, 1, 0, 3021, 16, 'MOHD AJAHAR', '', '', '', '', '', '', '', 14, '', '', 0),
 ('RAMNIWAS LAUTU YADAV', 'SHIVAJI NAGAR BALKUM THANE MAHARASTA', 'SHIVAJI NAGAR BALKUM THANE MAHARASTA', 'THANE MUMBAI', 'THANE MUMBAI', 'Maharashtra', 'Maharashtra', '400607', '400607', '', '', '', '', '', 'AHBPY0601K', '', '', '2019-11-09', 0, '', 'DR', 0, 1, 0, 3022, 16, 'RAMNIWAS', '', '', '', '', '', '', '', 14, '', '', 0),
 ('DIRECT-CG CEMENT NEPAL', '', '', '', '', '--Select State--', '--Select State--', '', '', '', '', '', '', '', '', '', '', '2019-11-09', 0, '', 'DR', 1, 0, 0, 3023, 16, '', '', '', '', '', '', '', '', 14, '', '', 0),
 ('BANTI JI, ARVIND EMPORIYUM NEPAL', '', '', '', '', '--Select State--', '--Select State--', '', '', '', '', '', '', '', '', '', '', '2019-11-09', 0, '', 'DR', 1, 0, 0, 3024, 16, '', '', '', '', '', '', '', '', 14, '', '', 0),
@@ -734,9 +717,12 @@ INSERT INTO `ledger_master` (`leg_name`, `fac_addr`, `off_addr`, `fact_city`, `o
 ('KHERA GOODS CARRIER', 'GT ROAD PUNJABI MORE NEAR JAISWAL PETROL PUMP RANIGANJ DISTT P B', 'GT ROAD PUNJABI MORE NEAR JAISWAL PETROL PUMP RANIGANJ DISTT P B', 'RANIGANJ', 'RANIGANJ', 'West Bengal', 'West Bengal', '0000000', '000000', '', '', 'a9893142537@gmail.com', '', '', '', '', '', '2020-01-21', 0, '', 'DR', 0, 1, 0, 3063, 23, 'SONU', '', '', '', '', '', '', '', 14, '19BLAPS9388B1Z', '', 0),
 ('M R P AGRO DISTRIBUTORS', 'WARD NO 5 STREET NAME &#2406;&#2406; KRISHNAGAR NEPAL PAN 612604689 EXIM CODE 6126046890119NP', 'WARD NO 5 STREET NAME &#2406;&#2406; KRISHNAGAR NEPAL PAN 612604689 EXIM CODE 6126046890119NP', 'KRISHNAGAR', 'KRISHNAGAR', '--Select State--', '--Select State--', 'PAN 6126046', 'PAN 6126046', '', '', '', '', '', '', '', '', '2020-01-31', 0, '', 'DR', 0, 0, 1, 3064, 22, 'MOHMD. SAMMIM KHAN', '', '', '', '', '', '', '', 14, '', '', 0),
 ('SAARAN SIWAN DEVRAI LORRY BROKERS', 'KATRAS MORE, JHARIA', 'KATRAS MORE, JHARIA', 'DHANBAAD', 'DHANBAAD', 'Jharkhand', 'Jharkhand', '', '', '9431976225', '9431976225', '', '', '', '', '', '', '2020-01-31', 0, '', 'DR', 0, 1, 0, 3065, 22, 'SONU JAIN', '', '', '', '', '', '', '', 14, '', '', 0),
-('AMBAY STEELS PRIVATE LIMITED', 'Roouandehi. NEPAL', '', '', '', '--Select State--', '--Select State--', '', '', '', '', '', '', '', '', '', '', '2020-02-10', 0, '', 'DR', 0, 0, 1, 3066, 16, '', '', '', '', '', '', '', '', 14, '', '', 0),
-('AMBE STEELS PVT. LTD', 'AMBE COMPLEX 6TH FLOOR, TEKU ROAD,\r\nKATHMANDU, NEPAL. EXIM CODE: 3026009000103NP,\r\nTEL: 00977 14 258128/258129/255551', 'AMBE COMPLEX 6TH FLOOR, TEKU ROAD,\r\nKATHMANDU, NEPAL. EXIM CODE: 3026009000103NP,\r\nTEL: 00977 14 258128/258129/255551', '', '', '--Select State--', '--Select State--', '', '', '', '', '', '', '', '', '', '', '2020-02-18', 0, '', 'DR', 0, 0, 0, 3067, 16, '', '', '', '', '', '', '', '', 14, '', '', 0),
-('RAIC INTEGRATED SPONGE & POWER PRIVATE LIMITED', '19AACCB3462A1Z4', '', '', '', '--Select State--', '--Select State--', '', '', '', '', '', '', '', '', '', '', '2020-02-18', 0, '', 'DR', 0, 0, 0, 3068, 16, '', '', '', '', '', '', '', '', 14, '19AACCB3462A1Z4', '', 0);
+('AMBAY STEELS PRIVATE LIMITED', 'AMBEY COMPLEX 6TH FLOOR TEKU ROAD\r\nKATHMANDU NEPAL EXIM CODE : 3026009000103NP, TEL : 00977 14 258128/ 258129/ 255551', 'AMBEY COMPLEX 6TH FLOOR TEKU ROAD\r\nKATHMANDU NEPAL EXIM CODE : 3026009000103NP, TEL : 00977 14 258128/ 258129/ 255551', '', '', '--SELECT STATE--', '--SELECT STATE--', '', '', '', '', '', '', '', '', '', '', '2020-02-10', 0, '', 'DR', 0, 0, 1, 3066, 16, '', '', '', '', '', '', '', '', 14, '', '', 0),
+('S R STEEL INDUSTRIES PVT LTD', 'Madhwaliya-8, Rupandehi, NEPAL PAN 304287716, EXIM Code - 3042877160101NP Email srsteelbhw@gmail.com Phone + 977-9857022211', 'srsteelbhw@gmail.com Phone + 977-9857022211', '', '', '--Select State--', '--Select State--', '', '', '', '', '', '', '', '', '', '', '2020-02-18', 0, '', 'DR', 0, 0, 1, 3067, 16, '', '', '', '', '', '', '', '', 14, '', '', 0),
+('PURULIA METAL CASTING PRIVATE LIMITED', '', '', '', '', 'WEST BENGAL', 'WEST BENGAL', '', '', '', '', '', '', '', '', '', '', '2020-02-18', 0, '', 'DR', 0, 0, 1, 3068, 16, '', '', '', '', '', '', '', '', 14, '19AADCP4189P1ZK', '', 0),
+('TO THE ORDER OF NEPAL INVESTING BANK LTD.,', '', '', '', '', '--Select State--', '--Select State--', '', '', '', '', '', '', '', '', '', '', '2020-02-20', 0, '', 'DR', 0, 0, 0, 3069, 16, '', '', '', '', '', '', '', '', 14, '', '', 0),
+('SHREE STEELS PVT. LTD', 'OFFICE ADDRESS SIDDHARTHNAGAR-12, PAHARITOL RUPANDEHI NEPAL \r\nFACTORY ADDRESS ROHINI-3 SEMRAHAWA RUPANDEHI, NEPAL\r\nPAN NO. 604243917\r\nEXIM CODE : 6042439170132NP', 'OFFICE ADDRESS SIDDHARTHNAGAR-12, PAHARITOL RUPANDEHI NEPAL \r\nFACTORY ADDRESS ROHINI-3 SEMRAHAWA RUPANDEHI, NEPAL\r\nPAN NO. 604243917\r\nEXIM CODE : 6042439170132NP', '', '', '--Select State--', '--Select State--', '', '', '', '', '', '', '', '', '', '', '2020-02-20', 0, '', 'DR', 0, 0, 1, 3070, 16, '', '', '', '', '', '', '', '', 14, '', '', 0),
+('VIJAY SHRI STEEL PVT. LTD.', 'WARD NO 2 KRISHNA NAGAR MUNICIPALITY, KAPILVASTU NEPAL PAN 605991653 CONTACT PERSON : VIKASH KEDIA CONTACT NO. 9857023577 EXIM CODE : 6059916530126NP  Email : mail@vijayacement.net', 'WARD NO 2 KRISHNA NAGAR MUNICIPALITY, KAPILVASTU NEPAL PAN 605991653 CONTACT PERSON : VIKASH KEDIA CONTACT NO. 9857023577 EXIM CODE : 6059916530126NP  Email : mail@vijayacement.net', '', '', '--Select State--', '--Select State--', '', '', '', '', '', '', '', '', '', '', '2020-02-29', 0, '', 'DR', 0, 0, 1, 3071, 16, '', '', '', '', '', '', '', '', 14, '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -1486,8 +1472,8 @@ CREATE TABLE IF NOT EXISTS `mybanks` (
 --
 
 INSERT INTO `mybanks` (`bank_id`, `bnkname`, `branchaddr`, `accname`, `accnum`, `ifsc`, `swidt`) VALUES
-(1, 'icici bank', 'sipri bajar', 'sudhir', '8098080880', 'icicic676767', 'swift666'),
-(2, 'SBI', 'Orchha', 'sudhir shrivastava', '46546465464564', 'ICIIC 678686', 'DBC676'),
+(1, 'ICICI BANK LIMITED', 'TIKAMGARH MP INDIA', 'SANDAAR AGRO PRIVATE LIMITED', '145005001077', 'ICIC0001450', 'ICICINBBCTS'),
+(2, '0', '0', '0', '0', '0', '0'),
 (3, '0', '0', '0', '0', '0', '0');
 
 -- --------------------------------------------------------
@@ -1508,7 +1494,12 @@ CREATE TABLE IF NOT EXISTS `m_autoid` (
 --
 
 INSERT INTO `m_autoid` (`journalid`, `sellid`, `fid`, `comm_inv`) VALUES
-(1, 20, 16, 0);
+(1, 14, 16, 0),
+(1, 30, 19, 0),
+(1, 2, 20, 0),
+(1, 1, 21, 0),
+(1, 4, 22, 0),
+(1, 13, 23, 0);
 
 -- --------------------------------------------------------
 
@@ -1575,17 +1566,26 @@ CREATE TABLE IF NOT EXISTS `po_conditions` (
   `po_1` text NOT NULL,
   `po_2` text NOT NULL,
   `poid` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=153 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `po_conditions`
 --
 
 INSERT INTO `po_conditions` (`auto_id`, `po_1`, `po_2`, `poid`) VALUES
-(45, 'Price', 'EXW Durgapur , west Bengal India', 30),
-(46, 'tes2', 'some new conditions', 30),
-(47, 'Price', 'EXW Durgapur , west Bengal India', 31),
-(48, 'tes2', 'some new conditions', 31);
+(140, 'Price', 'EXW Durgapur , west Bengal India', 26),
+(141, 'Payment', 'Beneficiary Payable By Irrevocable LC 100% at Sight.', 26),
+(142, 'Delivery', 'Within 4-6 weeks from the Date of Receipts of Hard copy of LC', 26),
+(143, 'Packing', 'Export Standard Loose .', 26),
+(144, 'Transport & Insurence', 'To be arranged By the Byer.', 26),
+(145, 'Origin', 'INDIA', 26),
+(146, 'TT Reimbursement', 'To be Allowed', 26),
+(147, 'Custom Clearance (INDIA)', 'To be arranged by the Byer.', 26),
+(148, 'Shipment', 'Partial Shipment And Transshipment is Allowed.', 26),
+(149, 'TOLERANCE', '+/- 5% is Allowed in Value, Quality and Quanitity.', 26),
+(150, 'Bank Charges', 'All Bank Charges Outside india Will be paid by Byer.', 26),
+(151, 'Shipment Date', 'Date of Truck Receipts/Consignment Note will be Considered as Shipment Date', 26),
+(152, 'Issue of Letter of Credit :', 'Fully workable Irrevocable LC to be opened with in 5(Five) working Days form the date of Performa Inovice, Otherwise Seller Right to amend the price', 26);
 
 -- --------------------------------------------------------
 
@@ -1618,20 +1618,74 @@ CREATE TABLE IF NOT EXISTS `proformainv` (
   `piv_2` varchar(50) NOT NULL,
   `piv3` varchar(50) NOT NULL,
   `last_bill_char` varchar(4) NOT NULL DEFAULT 'A'
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `proformainv`
 --
 
 INSERT INTO `proformainv` (`tab_auto_id`, `consigneeid`, `proforma_inv`, `proforma_date`, `export_ref`, `buyrefno_date`, `cntry_origin`, `cntry_final`, `pre_carr_by`, `place_of_rec_per`, `vessel`, `port_of_laod`, `port_of_dis`, `final_dest`, `del_terms`, `extra_notes`, `incoterm`, `curency`, `bankid`, `shippartyidd`, `fid`, `piv_2`, `piv3`, `last_bill_char`) VALUES
+(25, 3066, '278', '2020-01-06', '0', 'EMAIL DT 03-01-2020', 'India', '0', 'Road', 'INDIA', 'By Truck', 'DURGAPUR INDIA', 'BHAIRAHAWA NEPAL VIA CUSTOMS ENTRY POINT IN NEPAL BHAIRAHAWA CUSTOMS OFFICE BHAIRAHAWA NEPAL', 'NEPAL', 'EX-WORKS DURGAPUR', '0', 'EX-WORK', 1, 1, 3066, 16, '2019-2020', 'SAN', 'B'),
+(26, 3071, '13', '2020-02-29', 'IEC : ABCCS3959G', 'Dt 28/2/2020 Telephonic Talk', 'India', 'NEPAL', 'Road', 'INDIA', 'By Truck', 'DURGAPUR WEST BANGAL', 'N.A.', 'NEPAL', 'By Irrevocable LC 100% at Sight.', '0', 'EX-WORK', 1, 1, 3071, 16, '2019-2020', 'SAN', 'B');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `proformainv_bck`
+--
+
+CREATE TABLE IF NOT EXISTS `proformainv_bck` (
+  `tab_auto_id` int(11) NOT NULL DEFAULT '0',
+  `consigneeid` int(11) NOT NULL,
+  `proforma_inv` varchar(100) NOT NULL,
+  `proforma_date` date NOT NULL,
+  `export_ref` varchar(100) NOT NULL,
+  `buyrefno_date` varchar(200) NOT NULL,
+  `cntry_origin` varchar(100) NOT NULL,
+  `cntry_final` varchar(100) NOT NULL,
+  `pre_carr_by` varchar(100) NOT NULL,
+  `place_of_rec_per` varchar(250) NOT NULL,
+  `vessel` varchar(100) NOT NULL,
+  `port_of_laod` varchar(200) NOT NULL,
+  `port_of_dis` varchar(200) NOT NULL,
+  `final_dest` varchar(100) NOT NULL,
+  `del_terms` text NOT NULL,
+  `extra_notes` text NOT NULL,
+  `incoterm` varchar(50) NOT NULL,
+  `curency` int(11) NOT NULL,
+  `bankid` int(11) NOT NULL,
+  `shippartyidd` int(11) NOT NULL,
+  `fid` int(11) NOT NULL,
+  `piv_2` varchar(50) NOT NULL,
+  `piv3` varchar(50) NOT NULL,
+  `last_bill_char` varchar(4) NOT NULL DEFAULT 'A'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `proformainv_bck`
+--
+
+INSERT INTO `proformainv_bck` (`tab_auto_id`, `consigneeid`, `proforma_inv`, `proforma_date`, `export_ref`, `buyrefno_date`, `cntry_origin`, `cntry_final`, `pre_carr_by`, `place_of_rec_per`, `vessel`, `port_of_laod`, `port_of_dis`, `final_dest`, `del_terms`, `extra_notes`, `incoterm`, `curency`, `bankid`, `shippartyidd`, `fid`, `piv_2`, `piv3`, `last_bill_char`) VALUES
+(27, 3020, '15', '2020-02-17', '0', 'tall', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3020, 16, '2019-2020', 'SAN', 'C'),
+(27, 3020, '15', '2020-02-17', '0', 'tall', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3020, 16, '2019-2020', 'SAN', 'C'),
+(27, 3020, '15', '2020-02-17', '0', 'tall', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3020, 16, '2019-2020', 'SAN', 'C'),
+(26, 3021, '14', '2020-02-17', '0', 'aaa', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3021, 16, '2019-2020', 'SAN', 'C'),
+(26, 3021, '14', '2020-02-17', '0', 'aaa', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3021, 16, '2019-2020', 'SAN', 'C'),
 (25, 3023, '13', '2020-02-17', 'aa', 'aa', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3023, 16, '2019-2020', 'SAN', 'M'),
 (26, 3021, '14', '2020-02-17', '0', 'aaa', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3021, 16, '2019-2020', 'SAN', 'C'),
 (27, 3020, '15', '2020-02-17', '0', 'tall', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3020, 16, '2019-2020', 'SAN', 'C'),
 (28, 3022, '16', '2020-02-17', '0', 'aa', 'India', '0', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 2, 1, 3022, 16, '2019-2020', 'SAN', 'N'),
-(29, 3020, '17', '2020-02-18', 'ref no', 'discc', 'India', 'nepal', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3020, 16, '2019-2020', 'SAN', 'B'),
 (30, 3020, '18', '2020-02-18', 'exp', 'discussion on phone', 'India', 'Nepal', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3020, 16, '2019-2020', 'SAN', 'B'),
-(31, 3067, '19', '2020-02-18', 'some ref number', 'Phone dicussion on 12/12/2019', 'India', 'Nepal', 'Road', 'India', 'By Truck', 'DURGAPUR, INDIA', 'BHAIRAHAWA, NEPAL VIA CUSTOMS ENTRY POINT IN NEPAL: BHAIRAHAWA CUSTOMS OFFICE, BHAIRAHAWA, NEPAL', 'Nepal', 'EX-WORKS DURGAPUR', '0', 'EX-WORK', 1, 1, 3067, 16, '2019-2020', 'SAN', 'C');
+(29, 3020, '17', '2020-02-18', 'ref no', 'discc', 'India', 'nepal', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3020, 16, '2019-2020', 'SAN', 'B'),
+(31, 3067, '19', '2020-02-18', 'some ref number', 'Phone dicussion on 12/12/2019', 'India', 'Nepal', 'Road', 'India', 'By Truck', 'DURGAPUR, INDIA', 'BHAIRAHAWA, NEPAL VIA CUSTOMS ENTRY POINT IN NEPAL: BHAIRAHAWA CUSTOMS OFFICE, BHAIRAHAWA, NEPAL', 'Nepal', 'EX-WORKS DURGAPUR', '0', 'EX-WORK', 1, 1, 3067, 16, '2019-2020', 'SAN', 'C'),
+(32, 3019, '15', '2020-02-20', 'exp ref', 'Talk ovre phone on 14/02/2020', 'India', 'Nepal', 'Road', '0', 'By Truck', '0', '0', '0', '0', '0', 'EX-WORK', 1, 1, 3019, 16, '2019-2020', 'SAN', 'B'),
+(18, 3024, 'test prf invoi 501', '2020-02-18', 'exp ref', 'but talk', 'india', 'Nepal', 'Road', 'test', 'vess', 'pol', 'port of dis', 'final destin', 'some terms', '0', 'EX-WORK', 1, 1, 3024, 16, '', '', ''),
+(20, 3022, 'MP04 test invoice', '2020-02-16', 'exp ref', 'talk on phone', 'India', 'Nepal', 'Road', '0', 'By Truck', '0', '0', '0', 'EX work India', 'my notes abou this proforma', 'FOB', 2, 1, 3022, 16, '', '', ''),
+(19, 3066, 'SAN/2019-2020/13', '2020-02-16', '0', 'email DT 15.2.2020', 'INDIA', 'NEPAL', 'Road', 'INDIA', 'BY ROAD', 'EXW DURGAPUR', 'BHAIRWAHA', 'BHAIRWAHA', 'IRRECOVERABLE LC', '0', 'EX-WORK', 1, 1, 3066, 16, '', '', ''),
+(21, 3021, '1', '2020-02-18', 'Exporter r', 'Talk ovre phone on 14/02/2020', 'India', 'Nepal', 'Road', 'India', 'By Truck', 'Kolkata', 'Bangladesh', 'Nepal katmandu', '0', '0', 'EX-WORK', 1, 1, 3021, 16, '2019-2020', 'SAN', 'B'),
+(22, 3066, '13', '2020-02-18', '0', 'PHONE DT 18-02-2020', 'India', '0', 'Road', 'INDIA', 'By Truck', 'DURGAPUR', 'BHAIRWAHA', 'BHAIRWAHA', '0', '0', 'EX-WORK', 1, 1, 3066, 16, '2019-2020', 'SAN', 'A'),
+(23, 3067, '100', '2020-02-18', '0', 'E mail Dt 28-8-2020', 'India', 'NEPAL', 'Road', 'INDIA', 'By Truck', 'DURGAPUR INDIA', 'BHAIRWAHA NEPAL', 'NEPAL', 'EXW DURGAPUR INDIA WEST BANGAL & CONFIRM BANKERS L/C PAYABLE AT SIGHT', '0', 'EX-WORK', 1, 1, 3067, 16, '2019-2020', 'SAN', 'E'),
+(24, 3070, '48', '2019-09-21', '0', '0', 'India', 'NEPAL', 'Road', 'INDIA', 'By Truck', 'DURGAPUR WESTBANGAL', 'BHAIRAWAHA CUSTOMS OFFICE BY ROAD', 'NEPAL', 'EX.WORKS DURGAPUR WEST BANGAL INDIA PAYMENT 100% OF INOVICE VALUE UNDER AT SIGHT', '0', 'EX-WORK', 1, 1, 3070, 16, '2019-2020', 'SAN', 'D');
 
 -- --------------------------------------------------------
 
@@ -1652,26 +1706,15 @@ CREATE TABLE IF NOT EXISTS `proforma_item` (
   `item_details` text NOT NULL,
   `gst` int(11) NOT NULL,
   `bags` float NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `proforma_item`
 --
 
 INSERT INTO `proforma_item` (`tab_auto_id`, `proforma_id`, `item_id`, `goods_descr`, `hsncode`, `unit`, `qty`, `rate`, `amount`, `item_details`, `gst`, `bags`) VALUES
-(31, 18, 57, 'MS BILLETS', '7207.1920', 'MTS', 1000, 50, 50000.00, '(INDUSTRIAL RAW MATERIAL)', 0, 0),
-(33, 19, 57, 'MS BILLETS', '7207.1920', 'MTS', 20, 10, 236.00, '(INDUSTRIAL RAW MATERIAL)', 18, 70),
-(40, 20, 57, 'MS BILLETS', '7207.1920', 'MTS', 20, 100, 2000.00, '(INDUSTRIAL RAW MATERIAL)', 0, 0),
-(41, 20, 57, 'MS BILLETS', '7207.1920', 'MTS', 10, 120, 1200.00, '(INDUSTRIAL RAW MATERIAL)', 0, 0),
-(43, 23, 57, 'MS BILLETS', '7207.1920', 'MTS', 20, 150, 3000.00, '(INDUSTRIAL RAW MATERIAL)', 0, 0),
-(45, 24, 52, 'COAL', '2701', 'MTS', 10, 100, 1000.00, '0', 0, 0),
-(49, 25, 57, 'MS BILLETS', '7207.1920', 'MTS', 120, 100, 12000.00, '(INDUSTRIAL RAW MATERIAL)', 0, 0),
-(51, 26, 52, 'COAL', '2701', 'MTS', 10, 5000, 50000.00, '0', 0, 0),
-(52, 27, 52, 'COAL', '2701', 'MTS', 10, 50, 500.00, '0', 0, 0),
-(54, 28, 54, 'COAL (JHARKHAND CCL)', '2701', 'MTS', 10, 50, 500.00, 'JHARKHAND COAL', 0, 0),
-(55, 29, 57, 'MS BILLETS', '7207.1920', 'MTS', 50, 1000, 50000.00, '(INDUSTRIAL RAW MATERIAL)', 0, 0),
-(57, 30, 57, 'MS BILLETS', '7207.1920', 'MTS', 200, 200, 40000.00, '(INDUSTRIAL RAW MATERIAL)', 0, 0),
-(58, 31, 57, 'MS BILLETS', '7207.1920', 'MTS', 75.06, 413, 30999.78, '(INDUSTRIAL RAW MATERIAL)', 0, 0);
+(46, 25, 57, 'MS BILLETS (100MMX100MMX6M)', '7207.19.20', 'MTS', 500, 413, 206500.00, '(INDUSTRIAL RAW MATERIAL)(NON ALLOY STEEL BILLETS)SIZE  : 100MMX100MM X 6M', 0, 0),
+(50, 26, 57, 'NON ALLOY STEEL BILLETS (MS BILLETS)', '7207.19.20', 'MTS', 500, 401, 200500.00, '(INDUSTRIAL RAW MATERIAL) SIZE   : 125MMX125MM +/- 3MM      LENGTH : 6000 MM +/- 100MM      SILICON    : 0.15% TO 0.22%       SUL.& PHOS : 0.120% MAX.          CARBON     : 0.15% TO 0.22%           MANGANES   : 0.50%', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -1698,21 +1741,24 @@ CREATE TABLE IF NOT EXISTS `proforma_item_bck` (
 --
 
 INSERT INTO `proforma_item_bck` (`tab_auto_id`, `proforma_id`, `item_id`, `goods_descr`, `hsncode`, `unit`, `qty`, `rate`, `amount`, `item_details`, `gst`) VALUES
-(32, 19, 57, 'MS BILLETS', '7207.1920', 'MTS', 20, 10, 236.00, '(INDUSTRIAL RAW MATERIAL)', 18),
-(34, 20, 57, 'MS BILLETS', '7207.1920', 'MTS', 20, 100, 2000.00, '(INDUSTRIAL RAW MATERIAL)', 0),
-(35, 20, 57, 'MS BILLETS', '7207.1920', 'MTS', 10, 120, 1200.00, '(INDUSTRIAL RAW MATERIAL)', 0),
-(36, 20, 57, 'MS BILLETS', '7207.1920', 'MTS', 20, 100, 2000.00, '(INDUSTRIAL RAW MATERIAL)', 0),
-(37, 20, 57, 'MS BILLETS', '7207.1920', 'MTS', 10, 120, 1200.00, '(INDUSTRIAL RAW MATERIAL)', 0),
-(38, 20, 57, 'MS BILLETS', '7207.1920', 'MTS', 20, 100, 2000.00, '(INDUSTRIAL RAW MATERIAL)', 0),
-(39, 20, 57, 'MS BILLETS', '7207.1920', 'MTS', 10, 120, 1200.00, '(INDUSTRIAL RAW MATERIAL)', 0),
-(42, 23, 57, 'MS BILLETS', '7207.1920', 'MTS', 20, 150, 3000.00, '(INDUSTRIAL RAW MATERIAL)', 0),
-(44, 24, 52, 'COAL', '2701', 'MTS', 10, 100, 1000.00, '0', 0),
-(46, 25, 57, 'MS BILLETS', '7207.1920', 'MTS', 120, 100, 12000.00, '(INDUSTRIAL RAW MATERIAL)', 0),
-(47, 25, 57, 'MS BILLETS', '7207.1920', 'MTS', 120, 100, 12000.00, '(INDUSTRIAL RAW MATERIAL)', 0),
-(48, 25, 57, 'MS BILLETS', '7207.1920', 'MTS', 120, 100, 12000.00, '(INDUSTRIAL RAW MATERIAL)', 0),
-(50, 26, 52, 'COAL', '2701', 'MTS', 10, 5000, 50000.00, '0', 0),
-(53, 28, 54, 'COAL (JHARKHAND CCL)', '2701', 'MTS', 10, 50, 500.00, 'JHARKHAND COAL', 0),
-(56, 30, 57, 'MS BILLETS', '7207.1920', 'MTS', 200, 200, 40000.00, '(INDUSTRIAL RAW MATERIAL)', 0);
+(31, 18, 57, 'MS BILLETS', '7207.1920', 'MTS', 50, 500, 29500.00, '(INDUSTRIAL RAW MATERIAL)', 18),
+(34, 20, 57, 'MS BILLETS', '7207.1920', 'MTS', 100, 20, 2000.00, '(INDUSTRIAL RAW MATERIAL)', 0),
+(36, 21, 58, 'MS BILLETS ( SIZE 125MMX125MMX6M)', '7207.19.20', 'MTS', 10, 500, 5000.00, '(NON ALLOY STEEL BILLETS)INDUSTRIAL RAW MATERIAL)SIZE : 125MMX125MMLENTH: 6000MM (+/- 100MM)', 0),
+(39, 23, 58, 'MS BILLETS ( SIZE 125MMX125MMX6M)', '7207.19.20', 'MTS', 500, 411, 205500.00, '(NON ALLOY STEEL BILLETS)INDUSTRIAL RAW MATERIAL)SIZE : 125MMX125MMLENTH: 6000MM (+/- 100MM)', 0),
+(41, 24, 58, 'MS BILLETS ( SIZE 125MMX125MMX6M)', '7207.19.20', 'MTS', 500, 210.75, 105375.00, '(NON ALLOY STEEL BILLETS)INDUSTRIAL RAW MATERIAL)SIZE : 125MMX125MMLENTH: 6000MM (+/- 100MM)', 0),
+(42, 24, 58, 'MS BILLETS ( SIZE 125MMX125MMX6M)', '7207.19.20', 'MTS', 500, 210.75, 105375.00, '(NON ALLOY STEEL BILLETS)INDUSTRIAL RAW MATERIAL)SIZE : 125MMX125MMLENTH: 6000MM (+/- 100MM)', 0),
+(43, 24, 58, 'MS BILLETS ( SIZE 125MMX125MMX6M)', '7207.19.20', 'MTS', 500, 347, 173500.00, '(NON ALLOY STEEL BILLETS)INDUSTRIAL RAW MATERIAL)SIZE : 125MMX125MMLENTH: 6000MM (+/- 100MM)', 0),
+(44, 24, 58, 'MS BILLETS ( SIZE 125MMX125MMX6M)', '7207.19.20', 'MTS', 500, 347, 173500.00, '(NON ALLOY STEEL BILLETS)INDUSTRIAL RAW MATERIAL)SIZE : 125MMX125MMLENTH: 6000MM (+/- 100MM)', 0),
+(32, 18, 57, 'MS BILLETS', '7207.1920', 'MTS', 50, 500, 29500.00, '(INDUSTRIAL RAW MATERIAL)', 18),
+(35, 20, 57, 'MS BILLETS', '7207.1920', 'MTS', 50, 100, 5000.00, '(INDUSTRIAL RAW MATERIAL)', 0),
+(33, 19, 57, 'MS BILLETS', '7207.1920', 'MTS', 500, 411, 205500.00, '(INDUSTRIAL RAW MATERIAL)', 0),
+(37, 21, 58, 'MS BILLETS ( SIZE 125MMX125MMX6M)', '7207.19.20', 'MTS', 10, 500, 5000.00, '(NON ALLOY STEEL BILLETS)INDUSTRIAL RAW MATERIAL)SIZE : 125MMX125MMLENTH: 6000MM (+/- 100MM)', 0),
+(38, 22, 57, 'MS BILLETS (100MMX100MMX6M)', '7207.19.20', 'MTS', 500, 411, 205500.00, '(INDUSTRIAL RAW MATERIAL)(NON ALLOY STEEL BILLETS)SIZE  : 100MMX100MM X 6M', 0),
+(40, 23, 58, 'MS BILLETS ( SIZE 125MMX125MMX6M)', '7207.19.20', 'MTS', 500, 411, 205500.00, '(NON ALLOY STEEL BILLETS)INDUSTRIAL RAW MATERIAL)SIZE : 125MMX125MMLENTH: 6000MM (+/- 100MM)', 0),
+(45, 24, 58, 'MS BILLETS ( SIZE 125MMX125MMX6M)', '7207.19.20', 'MTS', 500, 347, 173500.00, '(NON ALLOY STEEL BILLETS)INDUSTRIAL RAW MATERIAL)SIZE : 125MMX125MMLENTH: 6000MM (+/- 100MM)', 0),
+(47, 26, 57, 'NON ALLOY STEEL BILLETS (MS BILLETS)', '7207.19.20', 'MTS', 500, 401, 200500.00, '(INDUSTRIAL RAW MATERIAL)(NON ALLOY STEEL BILLETS)SIZE   : 125MMX125MM +/- 3MM      LENGTH : 6000 MM +/- 100MM      SILICON    : 0.15% TO 0.22%       SUL.& PHOS : 0.120% MAX.          CARBON     : 0.15% TO 0.22%           MANGANES   : 0.50%', 0),
+(48, 26, 57, 'NON ALLOY STEEL BILLETS (MS BILLETS)', '7207.19.20', 'MTS', 500, 401, 200500.00, '(INDUSTRIAL RAW MATERIAL)(NON ALLOY STEEL BILLETS)SIZE   : 125MMX125MM +/- 3MM      LENGTH : 6000 MM +/- 100MM      SILICON    : 0.15% TO 0.22%       SUL.& PHOS : 0.120% MAX.          CARBON     : 0.15% TO 0.22%           MANGANES   : 0.50%', 0),
+(49, 26, 57, 'NON ALLOY STEEL BILLETS (MS BILLETS)', '7207.19.20', 'MTS', 500, 401, 200500.00, '(INDUSTRIAL RAW MATERIAL)(NON ALLOY STEEL BILLETS)SIZE   : 125MMX125MM +/- 3MM      LENGTH : 6000 MM +/- 100MM      SILICON    : 0.15% TO 0.22%       SUL.& PHOS : 0.120% MAX.          CARBON     : 0.15% TO 0.22%           MANGANES   : 0.50%', 0);
 
 -- --------------------------------------------------------
 
@@ -1736,16 +1782,17 @@ CREATE TABLE IF NOT EXISTS `proforma_lc_details` (
   `othersss` varchar(200) NOT NULL,
   `proforma_id` int(11) NOT NULL,
   `lcnumber` varchar(200) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `proforma_lc_details`
 --
 
 INSERT INTO `proforma_lc_details` (`tab_auto_id`, `issue_branch`, `date_of_issue`, `lc_date`, `currency`, `amt_of_lc`, `form_of_lc`, `tolerance`, `expdate`, `exp_place`, `advise_bank`, `benefeitiary_details`, `othersss`, `proforma_id`, `lcnumber`) VALUES
-(1, 'Sipri bajar jahnsi', '2019-06-01', '2019-06-01', '1', 5000000.00, 'for of lc', 'some tolerence', '2019-06-01', 'Hyderabad', 'Icici bank', 'sudhir shrivastava', 'some othrer detailsd', 30, 'LC959599595'),
-(2, 'Sipri bajar jahnsi', '2019-06-01', '2019-06-01', '1', 5000000.00, 'for of lc', 'some tolerence', '2019-06-01', 'Hyderabad', 'Icici bank', 'sudhir shrivastava', 'some othrer detailsd', 30, 'LC9577798'),
-(3, 'KATHMANDU, NEPAL.', '2020-01-09', '2020-01-09', '1', 50000.00, 'a', 'a', '2020-01-09', 'Nepal', 'MACHHAPUCHCHHRE BANK LIMITED', 'Manish', '0', 31, 'MBL20KTMIND011');
+(15, 'ICICI bank', '2020-04-01', '2020-04-01', '1', 500000.00, '00', '00', '2020-04-01', 'India', 'Hdfc bank', 'some name', '0', 18, 'LC10256'),
+(16, 'MACHHAPUCHCHHRE BANK LIMITED KATHMANDU NEPAL', '2020-01-09', '2020-01-09', '1', 350000.00, 'IRRECOVERABLE', '0', '2020-03-31', '0', '0', 'SANDAAR AGRO PRIVATE LIMITED', '0', 23, 'MBL20KTMIND011 DATED'),
+(17, 'NEPAL INVESTING BANK LTD KATHMANDU, NEPAL', '2020-08-19', '2020-08-19', '1', 105375.00, 'IRROVERABLE', '0', '2020-12-31', '0', 'ICICI BANK LIMITED', 'SANDAAR AGRO PRIVATE LIMITED', '0', 24, '010LCIFS19-0080 DT 19-08-20'),
+(18, 'MACHHAPUCHCHHRE BANK LIMITED, KATHMANDU NEPAL', '2020-01-09', '2020-01-09', '1', 225000.00, 'IRRECOVERABLE', '0', '2020-02-28', '0', 'ICICI BANK LIMITED', 'SANDAAR AGRO PRIVATE LIMITED', '0', 25, 'MBL20KTMIND011');
 
 -- --------------------------------------------------------
 
@@ -1996,7 +2043,7 @@ CREATE TABLE IF NOT EXISTS `stockitem` (
   `hsn` varchar(40) NOT NULL,
   `gst` float NOT NULL,
   `i_detail` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=58 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `stockitem`
@@ -2010,7 +2057,8 @@ INSERT INTO `stockitem` (`stockid`, `stockitem`, `quantitytype`, `reportformandi
 (54, 'COAL (JHARKHAND CCL)', 'Metric Tons', 'NO', 0, 20, 0, '2017-04-01', 9, 'None', 0, '2701', 5, 'JHARKHAND COAL'),
 (55, 'FLY ASH', 'Metric Tons', 'NO', 0, 22, 0, '2017-04-01', 8, 'None', 0, '2621', 0, '(DRY FLY ASH)'),
 (56, 'FRIGHT', 'Metric Tons', 'FREIGHT', 0, 22, 0, '2017-04-01', 8, 'None', 20, '9967', 0, '(TRANSPORTATION)'),
-(57, 'MS BILLETS', 'Metric Tons', 'NO', 0, 16, 0, '2019-04-01', 9, 'None', 0, '7207.1920', 18, '(INDUSTRIAL RAW MATERIAL)');
+(57, 'NON ALLOY STEEL BILLETS (M S BILLETS)', 'MTS', 'NO', 0, 16, 0, '2019-04-01', 9, 'None', 0, '7207.19.20', 0, '(INDUSTRIAL RAW MATERIAL)\r\nSIZE   : 125MMX125MM +/- 3MM      \r\nLENGTH : 6000 MM +/- 100MM      \r\nSILICON    : 0.15% TO 0.22%       \r\nSUL.& PHOS : 0.120% MAX.          \r\nCARBON     : 0.15% TO 0.22%           \r\nMANGANES   : 0.50%'),
+(58, 'NON ALLOY STEEL BILLETS (M S BILLETS)', 'MTS', 'NO', 0, 16, 0, '2020-02-18', 9, 'None', 0, '7207.19.20', 0, '(INDUSTRIAL RAW MATERIAL)\r\nSIZE       : 100MMX100MM +/- 3MM\r\nLENGTH     : 6000 MM +/- 100MM\r\nSILICON    : 0.15% TO 0.22%\r\nSUL.& PHOS : 0.120% MAX.\r\nCARBON     : 0.15% TO 0.22%\r\nMANGANES   : 0.50%');
 
 -- --------------------------------------------------------
 
@@ -2719,27 +2767,27 @@ MODIFY `brid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 -- AUTO_INCREMENT for table `commercial_in_main`
 --
 ALTER TABLE `commercial_in_main`
-MODIFY `comm_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=33;
+MODIFY `comm_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=30;
 --
 -- AUTO_INCREMENT for table `comm_inv_conditions`
 --
 ALTER TABLE `comm_inv_conditions`
-MODIFY `auto_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
+MODIFY `auto_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `comm_in_items`
 --
 ALTER TABLE `comm_in_items`
-MODIFY `comm_item_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=35;
+MODIFY `comm_item_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=32;
 --
 -- AUTO_INCREMENT for table `condition_master`
 --
 ALTER TABLE `condition_master`
-MODIFY `tab_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `tab_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `currency_exchangee`
 --
 ALTER TABLE `currency_exchangee`
-MODIFY `tab_auto_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+MODIFY `tab_auto_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `currency_master`
 --
@@ -2784,7 +2832,7 @@ MODIFY `grid` int(10) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `ledger_master`
 --
 ALTER TABLE `ledger_master`
-MODIFY `legid` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3069;
+MODIFY `legid` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3072;
 --
 -- AUTO_INCREMENT for table `mandi13_ref`
 --
@@ -2879,22 +2927,22 @@ MODIFY `bank_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 -- AUTO_INCREMENT for table `po_conditions`
 --
 ALTER TABLE `po_conditions`
-MODIFY `auto_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=49;
+MODIFY `auto_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=153;
 --
 -- AUTO_INCREMENT for table `proformainv`
 --
 ALTER TABLE `proformainv`
-MODIFY `tab_auto_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=32;
+MODIFY `tab_auto_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=27;
 --
 -- AUTO_INCREMENT for table `proforma_item`
 --
 ALTER TABLE `proforma_item`
-MODIFY `tab_auto_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=59;
+MODIFY `tab_auto_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=51;
 --
 -- AUTO_INCREMENT for table `proforma_lc_details`
 --
 ALTER TABLE `proforma_lc_details`
-MODIFY `tab_auto_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `tab_auto_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
 --
 -- AUTO_INCREMENT for table `purchase_order`
 --
@@ -2919,7 +2967,7 @@ MODIFY `id` int(5) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=21;
 -- AUTO_INCREMENT for table `stockitem`
 --
 ALTER TABLE `stockitem`
-MODIFY `stockid` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=58;
+MODIFY `stockid` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=59;
 --
 -- AUTO_INCREMENT for table `supplier`
 --
