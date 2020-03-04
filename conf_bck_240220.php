@@ -23,19 +23,7 @@ $dbc = new PDO('mysql:host=localhost; dbname='.$mysql_database, $mysql_user, $my
 }
 
 function dops($qry) 
-{
-
-$db_z_string = strtoupper(substr(preg_replace('/\s+/', '', $qry),0,6));
-
-if($db_z_string=="SELECT")
-{
-	return  mysql_fetch_array(mysql_query($qry));
-	
-}
-
-else
-{
-
+{ 
 
 $connection=$GLOBALS['connection'];
 
@@ -48,10 +36,6 @@ $qry = str_replace("''", "'0'", $qry);
   }
 
 }
-}
-
-
-
 
 
 //  Now I will juts use function "dml_operation($qry)"   to execute all my DML operations

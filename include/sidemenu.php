@@ -113,6 +113,24 @@ select:focus {
       </ul>
    </li>
 
+
+          <li class='active has-sub'  ><a href='#'><span  style="background-color:white;color:black" >DATA MARGIN</span></a>
+      <ul>
+        		 
+		   <li><a href='../basicform/add_margin_entry_front.php'><span>ADD data </span></a>    
+         </li>
+		    <li><a href='../basicform/show_margin_entry.php'><span>VIEW data</span></a>    
+         </li>
+         
+         
+ 
+         
+		  
+		 
+      </ul>
+   </li>
+   
+   
           <li class='active has-sub'  ><a href='#'><span  style="background-color:white;color:black" >PROFORMA</span></a>
       <ul>
         		 
