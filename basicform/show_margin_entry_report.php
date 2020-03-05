@@ -96,13 +96,42 @@ $grs_prodd=$all_sum-$buy_all-$brk_all-$othre_exp;
         <table  border="2"  cellpadding="1"  bgcolor="white"  style="font-style:bold"  >
           <tbody>
 
-              <tr> <td><b>Sales value :</b>  </td>  <td> </td>  <td>  <?php  echo $sale_rates; ?> </td> </tr>
-             <tr> <td><b> Incentive :</b>  </td>  <td>BY Duty Drawback on Sale Price </td>   <td>  <?php echo $by_duty_dra; ?> </td>  </tr>
-		  <tr> <td> </td>  <td>By MEIS Claims on Sale Price </td>   <td> <?php  echo $meis_claim;?> </td>  </tr>
-		    <tr> <td> </td>  <td></td>   <td> <b><?php  echo $all_sum;?> </b> </td>  </tr>
+              <tr> <td><b>Sales value :</b>  </td>  <td>
+			  <table border="1" width="100%" > 
+
+ <tr> <td align="center" >(Qty) X Sales Rate (USD) X (USD_INR RATE)</td>    </tr>
+			   <tr> <td align="center"><?php echo $qty ?>  X  <?php echo $sale_rate ?>X  <?php echo $rate_convert ?>  </td>   </tr>
+			  </table>
+			  
+			  
+			  </td>  <td>  <?php  echo $sale_rates; ?> </td> </tr>
+             <tr> <td><b> Incentive :</b>  </td>  <td>	  <table border="1"  width="100%"> 
+
+ <tr> <td align="center" >(Qty) X Sales Rate (USD) X (Exchange Rates)X(DUTY DRAWABACK%)</td>    </tr>
+			   <tr> <td align="center"> <?php echo $qty."X".$final_Ex_rate."X".$sale_rate."X".$duty."%"; ?> </td>   </tr>
+			  </table>
+
+			  </td>   <td>  <?php echo $by_duty_dra; ?> </td>  </tr>
+		  <tr> <td> </td>  <td><table border="1"  width="100%"> 
+
+ <tr> <td align="center" >(Qty) X Sales Rate (USD) X (Exchange Rates)X(MEIS%)</td>    </tr>
+			   <tr> <td align="center"> <?php echo $qty."X".$final_Ex_rate."X".$sale_rate."X".$meis."%"; ?> </td>   </tr>
+			  </table>
+
+			  </td>   <td> <?php  echo $meis_claim;?> </td>  </tr>
+		    <tr> <td> </td>  <td align="right">Net Total: </td>   <td> <b><?php  echo $all_sum;?> </b> </td>  </tr>
 			   <tr> <td> </td>  <td></td>   <td> </br></br> </td>  </tr>
-			         <tr> <td><b> Purchase :</b>  </td>  <td></td>   <td>  <?php echo $buy_all; ?> </td>  </tr>
-					          <tr> <td><b> Brokerage :</b>  </td>  <td></td>   <td>  <?php echo $brk_all; ?> </td>  </tr>
+			         <tr> <td><b> Purchase :</b>  </td>  <td>
+					 
+					 <table border="1"  width="100%"> 
+
+ <tr> <td align="center" >(Qty) X Purchase Rate (INR) </td>    </tr>
+			   <tr> <td align="center"> <?php echo $qty."X".$buy_rate; ?> </td>   </tr>
+			  </table>
+			  
+					 
+					 </td>   <td>  <?php echo $buy_all; ?> </td>  </tr>
+					          <tr> <td><b> Brokerage :</b>  </td>  <td align="center">  <?php echo $qty."X".$brkage; ?> </td>   <td>  <?php echo $brk_all; ?> </td>  </tr>
 							    <tr> <td><b> Other Exp :</b>  </td>  <td></td>   <td>  <?php echo $othre_exp; ?> </td>  </tr>
 								  <tr> <td colspan="3" align="right"> <span  style="font-size:17px;background-color:powderblue;" > Gross Profit:  <?php echo $grs_prodd; ?> &nbsp  </span> </td>  </tr>
 					 

@@ -6,7 +6,7 @@ include('../conf.php');
 
 $t_date = date("d/m/Y");
 
-$emp=mysql_query("SELECT `t_date`,id,time(`time_stamp`) as tt FROM `margin_data` order by `t_date` desc") or die(mysql_error());
+$emp=mysql_query("SELECT `t_date`,id,time(`time_stamp`) as tt FROM `margin_data` order by id desc") or die(mysql_error());
 
 
 ?>
