@@ -20,6 +20,15 @@ $stmt->execute();
 $row=$stmt->fetch(PDO::FETCH_ASSOC);
 
 
+$bankidd =$row['bankid'];
+
+$result1_bankdetails = mysql_query("SELECT `bank_id`, `bnkname`, `branchaddr`, `accname`, `accnum`, `ifsc`, `swidt` FROM `mybanks` WHERE `bank_id` = $bankidd ");
+$result1_bank_rec = mysql_fetch_array($result1_bankdetails);
+
+
+
+
+
 			$consignid =$row['consigneeid'];
 			$shippid =$row['shippartyidd'];
 			
@@ -296,8 +305,22 @@ catch(Exception $e)
 			</tr>
 			
 			<tr>
-				<td colspan="3" style="text-align:right;margin-right:10px !important;border:1px solid #000;"></td>
-				<td colspan="2" style="text-align:right;margin-right:10px !important;border:1px solid #000;vertical-align: middle;"></td>
+				<td colspan="5" style="text-align:right;margin-right:10px !important;border:1px solid #000;">  
+				
+				
+				<table border="1" width="100%">
+
+<tr> <td colspan="2" align="left"> <b>Bank Details</b> </td>  </tr>
+<tr> <td> Bank A/C No :  </td>  <td> <?php echo $result1_bank_rec['accnum']; ?>  </td>   </tr>
+<tr> <td> BANK NAME:  </td>  <td>  <?php echo $result1_bank_rec['branchaddr']; ?> </td>   </tr>
+<tr> <td> Bank Branch:   </td>  <td> <?php echo $result1_bank_rec['ifsc']; ?>  </td>   </tr>
+<tr> <td> SWIFT  </td>  <td> <?php echo $result1_bank_rec['swidt']; ?> </td>   </tr>
+<tr> <td> Bank IFSC:   </td>  <td> <?php echo $result1_bank_rec['ifsc']; ?>  </td>   </tr>
+
+</table>
+
+				</td>
+
 			</tr>
 			
 			<tr>

@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('Asia/Kolkata');
+
 $mysql_hostname = "localhost";
 
 $mysql_user = "root";

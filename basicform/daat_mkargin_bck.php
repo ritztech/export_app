@@ -20,10 +20,12 @@ $dutydraww=trim(strip_tags($_POST['dutydraww']));
 $meisss=trim(strip_tags($_POST['meisss']));
 $otherexpp=trim(strip_tags($_POST['otherexpp']));
 
+$c_time=date('Y-m-d H:i:s');
+
 
 			
-			$sql="INSERT INTO `margin_data`(`qty`, `sale_rate`, `buy_rate`, `rate_convert`, `brkage`, `duty`, `meis`, `othre_exp`, `t_date`) VALUES 
-	('$qty','$salesrate','$purrates','$usdinr','$brokerages','$dutydraww','$meisss','$otherexpp',STR_TO_DATE('$tdate','%d/%m/%Y'))";			
+			$sql="INSERT INTO `margin_data`(`qty`, `sale_rate`, `buy_rate`, `rate_convert`, `brkage`, `duty`, `meis`, `othre_exp`, `t_date`,time_stamp) VALUES 
+	('$qty','$salesrate','$purrates','$usdinr','$brokerages','$dutydraww','$meisss','$otherexpp',STR_TO_DATE('$tdate','%d/%m/%Y'),'$c_time')";			
 			
 		$sql = str_replace("''", "'0'", $sql);
 		

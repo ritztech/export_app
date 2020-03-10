@@ -48,6 +48,8 @@ $brk_all=$qty*$brkage;
 
 $grs_prodd=$all_sum-$buy_all-$brk_all-$othre_exp;
 
+$profi_per_unit=$grs_prodd/$qty;
+
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -104,22 +106,22 @@ $grs_prodd=$all_sum-$buy_all-$brk_all-$othre_exp;
 			  </table>
 			  
 			  
-			  </td>  <td>  <?php  echo $sale_rates; ?> </td> </tr>
+			  </td>  <td>  <?php  echo round($sale_rates,2); ?> </td> </tr>
              <tr> <td><b> Incentive :</b>  </td>  <td>	  <table border="1"  width="100%"> 
 
  <tr> <td align="center" >(Qty) X Sales Rate (USD) X (Exchange Rates)X(DUTY DRAWABACK%)</td>    </tr>
 			   <tr> <td align="center"> <?php echo $qty."X".$final_Ex_rate."X".$sale_rate."X".$duty."%"; ?> </td>   </tr>
 			  </table>
 
-			  </td>   <td>  <?php echo $by_duty_dra; ?> </td>  </tr>
+			  </td>   <td>  <?php echo round($by_duty_dra,2); ?> </td>  </tr>
 		  <tr> <td> </td>  <td><table border="1"  width="100%"> 
 
  <tr> <td align="center" >(Qty) X Sales Rate (USD) X (Exchange Rates)X(MEIS%)</td>    </tr>
 			   <tr> <td align="center"> <?php echo $qty."X".$final_Ex_rate."X".$sale_rate."X".$meis."%"; ?> </td>   </tr>
 			  </table>
 
-			  </td>   <td> <?php  echo $meis_claim;?> </td>  </tr>
-		    <tr> <td> </td>  <td align="right">Net Total: </td>   <td> <b><?php  echo $all_sum;?> </b> </td>  </tr>
+			  </td>   <td> <?php  echo round($meis_claim,2);?> </td>  </tr>
+		    <tr> <td> </td>  <td align="right">Net Total: </td>   <td> <b><?php  echo round($all_sum,2);?> </b> </td>  </tr>
 			   <tr> <td> </td>  <td></td>   <td> </br></br> </td>  </tr>
 			         <tr> <td><b> Purchase :</b>  </td>  <td>
 					 
@@ -130,10 +132,27 @@ $grs_prodd=$all_sum-$buy_all-$brk_all-$othre_exp;
 			  </table>
 			  
 					 
-					 </td>   <td>  <?php echo $buy_all; ?> </td>  </tr>
+					 </td>   <td>  <?php echo round($buy_all,2); ?> </td>  </tr>
 					          <tr> <td><b> Brokerage :</b>  </td>  <td align="center">  <?php echo $qty."X".$brkage; ?> </td>   <td>  <?php echo $brk_all; ?> </td>  </tr>
 							    <tr> <td><b> Other Exp :</b>  </td>  <td></td>   <td>  <?php echo $othre_exp; ?> </td>  </tr>
-								  <tr> <td colspan="3" align="right"> <span  style="font-size:17px;background-color:powderblue;" > Gross Profit:  <?php echo $grs_prodd; ?> &nbsp  </span> </td>  </tr>
+								  <tr> <td colspan="3" align="right"> <span  style="font-size:17px;background-color:#f0c189;color:black;" > Gross Profit:  <?php echo round($grs_prodd,2); ?> &nbsp  </span> 
+								  
+								  </td>  </tr>
+								  
+	  <tr> <td colspan="2" align="right">  <span  style="font-size:17px;background-color:#f0c189;color:black;">  Total Qty:                              								      
+									  </span> 
+								  
+								  </td>  <td style="font-size:17px;background-color:#f0c189;color:black;" > <?php  echo $qty ?>  </td> </tr>
+								  
+	  <tr> <td colspan="2" align="right">  <span  style="font-size:17px;background-color:#f0c189;color:black;" >  Expected Margin INR:                              								      
+									  </span> 
+								  
+								  </td>  <td style="font-size:17px;background-color:#f0c189;color:black;" > <?php  echo round($grs_prodd/$qty,2) ?>  </td> </tr>		
+
+	  <tr> <td colspan="2" align="right">  <span  style="font-size:17px;background-color:#f0c189;color:black;">  Retun on Investment(Gross profit/Purchase Value)                              								      
+									  </span> 
+								  
+								  </td>  <td style="font-size:17px;background-color:#f0c189;color:black;" > <?php  echo round(($grs_prodd/$buy_all)*100,2) ?>%  </td> </tr>										  
 					 
 		  
 		  

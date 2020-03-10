@@ -4,7 +4,13 @@ if(!isset($_SESSION['uname'])) { header('Location: ../index.php'); }
 
 include('../conf.php');
 
+date_default_timezone_set('Asia/Kolkata');
+//echo date('d-m-Y H:i:s');
 $t_date = date("d/m/Y");
+
+
+//echo $t_date;
+
 
 
 ?>
