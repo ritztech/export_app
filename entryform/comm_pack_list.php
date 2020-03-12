@@ -225,6 +225,10 @@ LC NO:  <?php echo $row13_lcd['lcnumber'] ?> DATED  :    <?php echo date("d-M-Y"
 <td valign="top" width="50%" >
 
 
+<table border="1" style="border-width: 2px;" width="100%"  >
+<tr> <td colspan="2"> 
+<b>Consignee:</b> </br>
+
 GOODS CONSIGNED TO THE ORDER OF
 <?php 
 $result13_33 = mysql_query("SELECT `tab_auto_id`, `issue_branch`, DATE_FORMAT(date_of_issue,'%d/%m/%Y') as date_of_issue, DATE_FORMAT(lc_date,'%d/%m/%Y') as lc_date, `currency`, `amt_of_lc`, `form_of_lc`, `tolerance`, DATE_FORMAT(expdate,'%d/%m/%Y') as expdate, `exp_place`, `advise_bank`, `benefeitiary_details`, `othersss`, `proforma_id`, `lcnumber` FROM `proforma_lc_details` WHERE  proforma_id=$proforma_id"); 
@@ -235,14 +239,27 @@ while($row17 = mysql_fetch_array($result13_33))
 
 ?>  </br>
 
+ </td> </tr>
 
-<b> Notify Buyer: </b>
+<tr> 
+
+ <td> 
+
+
+
+</br>
+<b> Notify Buyer(if other than consignee): </b></br>
 
 <?php echo $p_name  ?> </br>
 <?php echo $off_addr1  ?> </br>
 
 
 
+ </td> </tr>
+
+
+
+</table>
 
 
 

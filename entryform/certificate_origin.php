@@ -205,7 +205,7 @@ Exporter: </br></br>
 <tr> <td  width="50%" align="left"> Invoice No.  <?php  echo $row['com_inv_2'];  ?>/<?php  echo $row['invoice_no'];  ?>/<?php  echo $row['comm_inv_3'];  ?>  </td>
   <td align="right">Date: <?php  echo $row['inv_date'] ?>  </td>  </tr>
 
-<tr>  <td>  </br> </br>
+<tr>  <td width="100%">  </br> </br>
  <?php
 
 //echo "SELECT `tab_auto_id`, `issue_branch`, `date_of_issue`, `lc_date`, `currency`, `amt_of_lc`, `form_of_lc`, `tolerance`, `expdate`, `exp_place`, `advise_bank`, `benefeitiary_details`, `othersss`, `proforma_id`, `lcnumber` FROM `proforma_lc_details` = $proforma_id";

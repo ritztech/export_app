@@ -226,11 +226,16 @@ LC NO:  <?php echo $row13_lcd['lcnumber'] ?> DATED  :    <?php echo date("d-M-Y"
 </table>
 
 
-<table width="100%"  align="center"   id = "newtable"  border="1">
+<table width="100%"  align="center"   id = "newtable"  border="2">
 
 <tr> 
 
-<td valign="top" width="50%" >
+
+
+ <td width="50%" valign="top"> 
+<table border="1" style="border-width: 2px;" width="100%"  >
+<tr> <td colspan="2"> 
+<b>Consignee:</b> </br>
 
 GOODS CONSIGNED TO THE ORDER OF
 <?php 
@@ -242,17 +247,37 @@ while($row17 = mysql_fetch_array($result13_33))
 
 ?>  </br>
 
+ </td> </tr>
 
-<b> Notify Buyer: </b>
+<tr> 
+
+ <td> 
+
+
+
+</br>
+<b> Notify Buyer(if other than consignee): </b></br>
 
 <?php echo $p_name  ?> </br>
 <?php echo $off_addr1  ?> </br>
 
 
 
+ </td> </tr>
 
 
- </td>  
+
+</table>
+
+
+ </td> 
+ 
+ 
+ 
+
+
+
+ 
 
 
 
@@ -271,6 +296,8 @@ while($row17 = mysql_fetch_array($result13_33))
 
 
  </td> 
+ 
+ 
 
 
  </tr>

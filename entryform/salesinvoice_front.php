@@ -521,6 +521,27 @@ document.form1.trandname.value = content;
 )
 
 
+  		$(".auto_one_line").autocomplete({
+			
+							 
+            minLength: 0,
+            source: "find_one_line.php",
+            
+			focus: function( event, ui ) {
+                      return false;
+               },
+        
+		select: function( event, ui ) {
+              $(this).val( ui.item.label );
+				
+						   
+               return false;
+            }
+         }
+		 
+)
+
+
 
   		$(".get_terms_condit").autocomplete({
 			
@@ -826,7 +847,7 @@ Exporter  ref : <input type="text"   size = "30"  value = "IEC : ABCCS3959G" id=
 		
 				<table>
 
-		<tr> <td>  Country of final destination </td>  <td> <input type="text" name="cntryfinaldest" tabIndex = "1"  value = "" id="cntryfinaldest" size="45"/> </td>   </tr>
+		<tr> <td>  Country of final destination </td>  <td> <input type="text" name="cntryfinaldest" tabIndex = "1"  class='auto_one_line' value = "" id="cntryfinaldest" size="45"/> </td>   </tr>
 		</table>
 		
 		
@@ -939,7 +960,7 @@ Exporter  ref : <input type="text"   size = "30"  value = "IEC : ABCCS3959G" id=
 		<tr>  <td valign="top">
 		<table>
 		<tr> <td>  Pre- Carriage by </td>  <td>  <input type="text"   size = "20"  value = "Road" name="precarbyy" id="precarbyy" />   </td>   </tr>
-				<tr> <td>  Place of receipt by Pre- Carriage </td>  <td> <input type="text"   size = "30" name="placeofrecprecarr" id="placeofrecprecarr" />   </td>   </tr>
+				<tr> <td>  Place of receipt by Pre- Carriage </td>  <td> <input type="text" class='auto_one_line'   size = "30" name="placeofrecprecarr" id="placeofrecprecarr" />   </td>   </tr>
 		</table>
 		</td>
 		
@@ -947,9 +968,9 @@ Exporter  ref : <input type="text"   size = "30"  value = "IEC : ABCCS3959G" id=
 		
 				<table>
 		<tr> <td>  Vessel/Flight No.  </td>  <td> <input type="text"  value = "By Truck "  size = "30" name="vesselflight" id="vesselflight" />   </td>   </tr>
-		<tr> <td>  Port of Discharge  </td>  <td> <input type="text"   size = "30" name="port_discjar" id="port_discjar" />  </td>   </tr>
-		<tr> <td>  Port of Loading   </td>  <td> <input type="text"   size = "30" name="port_loadingggg" id="port_loadingggg" />  </td>   </tr>
-		<tr> <td>  Final Destination   </td>  <td> <input type="text"   size = "30" name="finaldest2" id="finaldest2" />  </td>   </tr>
+		<tr> <td>  Port of Discharge  </td>  <td> <input type="text" class='auto_one_line'   size = "30" name="port_discjar" id="port_discjar" />  </td>   </tr>
+		<tr> <td>  Port of Loading   </td>  <td> <input type="text" class='auto_one_line'  size = "30" name="port_loadingggg" id="port_loadingggg" />  </td>   </tr>
+		<tr> <td>  Final Destination   </td>  <td> <input type="text"  class='auto_one_line'  size = "30" name="finaldest2" id="finaldest2" />  </td>   </tr>
 		
 		</table>
 		
@@ -958,7 +979,7 @@ Exporter  ref : <input type="text"   size = "30"  value = "IEC : ABCCS3959G" id=
 		
 		</tr>
 		
-		<tr>  <td> Delivery & Payment Terms:  ::  <input type="text"   value = "" size = "50" name="deltermssssss" id="deltermssssss" />   </td> </tr>
+		<tr>  <td> Delivery & Payment Terms:  ::  <input type="text"  class='auto_one_line'  value = "" size = "50" name="deltermssssss" id="deltermssssss" />   </td> </tr>
 		
 		</table>
 		

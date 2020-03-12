@@ -79,6 +79,9 @@ select:focus {
 				                  <li><a href='../basicform/condition_master_view.php'><span>Conditions Master</span></a>  </li>
 		 
 		    <li><a href='../basicform/stk_item_view.php'><span>Product Master</span></a>  </li>
+					    <li><a href='../basicform/one_line_master.php'><span>One Line Master</span></a>  </li>
+			
+			
 			
 			
 

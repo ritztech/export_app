@@ -29,6 +29,55 @@ $prodiddd_id=$row1_lcdeatils['proforma_id'];
 		
 	
 <script language="javascript" type="text/javascript" >	
+
+
+		 function getXMLHTTP() { //fuction to return the xml http object
+		var xmlhttp=false;	
+		try{
+			xmlhttp=new XMLHttpRequest();
+		}
+		catch(e)	{		
+			try{			
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			catch(e){
+				try{
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+				}
+				catch(e1){
+					xmlhttp=false;
+				}
+			}
+		} 	
+		return xmlhttp;
+    }
+	
+	
+	
+	function deleterecord(deleteId) {
+	//	alert(deleteId)
+	
+    if (confirm("Are you sure you want to delete this record  ?!") == true) {
+	     	var strURL="del_prof_lc_detail.php?id="+deleteId;
+			//alert(strURL);
+			
+	var req = getXMLHTTP();
+	if (req) {
+				req.open("GET", strURL, true);
+		req.send(null);
+	}
+		
+	alert('Record deleted.');
+	window.history.back();
+	
+	
+	} else {
+        x = "You pressed Cancel!";
+    }
+
+}
+
+	
 		
 		function jumpto(){
 
@@ -100,9 +149,12 @@ var dt=document.form1.dateofissue
 <table  align="center"    width="50%"  id="toExcel" border="2" style="border:1px solid #000;" cellpadding="4">
 		
 		<tr>
-<td align = "center" colspan="8"> 
+<td align = "center" width="80%" > 
 <input type="button" name="CloseMe" value="Close Me" onClick="window.history.back();"/>
-  </td> </tr>
+  </td> 
+  
+   <td style="color:red;background-color:red"> <input type='button' name='btnprint' value='Delete' onclick='deleterecord(<?php echo $lcidd ?>)'/></td> 
+  </tr>
 
 
 
