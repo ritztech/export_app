@@ -20,6 +20,10 @@ $qry="delete FROM `proformainv` WHERE `tab_auto_id`=$id";
 dops($qry);
 
 
+$qry="DELETE FROM `commercial_in_main` WHERE proforma_id=$id";
+dops($qry);
+
+
 
 
 }
